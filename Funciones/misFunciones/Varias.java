@@ -1,5 +1,5 @@
 package misFunciones;
-/**
+/*
  * Varias.java
  * Funciones matematicas Varias
  * @SantiTru
