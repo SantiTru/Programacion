@@ -1,9 +1,9 @@
 package misFunciones;
 /*
- * Varias.java
- * Funciones matematicas Varias
- * @SantiTru
- */
+* Varias.java
+* Funciones matematicas Varias
+* @SantiTru
+*/
 public class Varias {
 /*
 * @info: función para realizar la multiplicación de dos números
