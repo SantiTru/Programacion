@@ -16,18 +16,33 @@ import java.util.Scanner;
 
 public class Ejer1_6Tema8 {
   
-  //Función 6, voltea
+//Función 6, voltea
   public static int voltea(int num){
+//Declaramos la variable numVolt para almacenar el número volteado
     int numVolt;
     numVolt = 0;
+//Declaramos la variable resto necesaria para nuestra acción de volteado
     int resto;
     resto = 1;
-
+//Iniciamos un bucle que se va a repetir mientras nuestro número llega hasta 0
     while(num > 0){
+/*
+*Para voltear un número tenemos que "extraer" los digitos de los que se compone. 
+*Para extraer el último digito de un número primero averiaguamos el resto de su división con 10.
+*Este resto será su último digito por lo que lo almacenamos en la variable numVolt.
+*Para ello, múltiplicamos numVolt por 10 y le sumamos el resto. De tal manera que ese digito extraido vaya 
+*pasando de su posición anterior a la nueva posición.
+*luego dividimos el numero dado por el usuario entre 10 y almacenamos su nuevo valor. De esta manera descartamos 
+*el último digito que nos de y repetimos el bucle con el nuevo valor hasta llegar a cero.
+*/
       resto = num % 10;
       numVolt = numVolt * 10 + resto;
       num /= 10;
     }
+/*
+*Una vez completado el bucle tendremos el número volteado almacenado en la variable numVolt por lo que le pedimos 
+*a nuestra función que lo retorne.
+*/
     return numVolt;
   }
 
