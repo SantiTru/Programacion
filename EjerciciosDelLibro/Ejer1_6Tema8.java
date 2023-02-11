@@ -41,7 +41,7 @@ public class Ejer1_6Tema8 {
     }
 /*
 *Una vez completado el bucle tendremos el número volteado almacenado en la variable numVolt por lo que le pedimos 
-*a nuestra función que lo retorne.
+*a nuestra función que lo muestre.
 */
     return numVolt;
   }
