@@ -1,4 +1,4 @@
-package EjerciciosDelLibro;
+package EjerciciosDelLibro.Tema8.ListadoNuevoEjercicios;
 //En las dos lineas siguientes importo tanto la funcion Varias como la funcion de Scanner
 import java.util.Scanner;
 import misFunciones.Varias;
@@ -19,9 +19,9 @@ public class Ejer1Tema8Listado {
 //Llamo a Scanner 
     Scanner teclado= new Scanner(System.in);
 //Solicito al usuario los dos números a multiplicar y los almaceno en las variables num1 y num2
-    System.out.println("Introduce un número: ");
+    System.out.println("Dime un número: ");
     num1= teclado.nextDouble();
-    System.out.println("Introduce un número: ");
+    System.out.println("Dime un número: ");
     num2= teclado.nextDouble();
 /*Declaro una nueva variable /result/ para almacenar el resultado de la operación por si fuese necesario 
 * usar dicho resultado más adelante aún cuando esta nueva variable consume más memoria.

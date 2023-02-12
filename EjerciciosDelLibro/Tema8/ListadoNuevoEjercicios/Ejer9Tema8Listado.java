@@ -1,4 +1,4 @@
-package EjerciciosDelLibro;
+package EjerciciosDelLibro.Tema8.ListadoNuevoEjercicios;
 //En las dos lineas siguientes importo tanto la funcion Varias como la funcion de Scanner
 import java.util.Scanner;
 import misFunciones.Varias;
