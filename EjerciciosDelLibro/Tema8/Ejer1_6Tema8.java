@@ -54,15 +54,21 @@ public class Ejer1_6Tema8 {
   }
 
 //Función 3, sigPrimo
+/*
+*En la función sigPrimo vamos a decirle al usuario el numero primo más próximo que siga al introducido por teclado
+*Para ello usamos una función boleana y un bucle que vaya sumando unidades hasta que se cumpla la función esPrimo 
+*en la que nos apoyamos para hacer la comprobación. 
+*/
   public static int sigPrimo(int num){
+//Declaramos la variable booleana primo y le damos valor de falso para así condicionar nuestro bucle.
     boolean primo;
     primo = false;
-
+//En nuestro bucle vamos a ir aplicando la función esPrimo e incrementando 1 a 1 nuestra variable num
     while (primo == false){
       num++;
       primo = esPrimo(num);
     }
-
+//Cuando se cumple la condición y nuestra función esPrimo devuelve verdadero retornamos el numero incrementado
     return num;
   }
 
@@ -130,15 +136,16 @@ public class Ejer1_6Tema8 {
 //Declaramos la variable numCapi para recoger lo introducido por teclado por el usuario    
     int numCapi;
     numCapi = teclado.nextInt();
-    
+//Declaramos la variable capiSiNo para aplicar la función esCapicua    
     boolean capiSiNo;
     capiSiNo = esCapicua(numCapi);
-
+//Aplicamos un If para comprobar si la función nos devuelve verdadero o falso e imprimir según el caso por pantalla
     if(capiSiNo){
       System.out.println("El número " + numCapi + " es capicúa");
     } else {
       System.out.println("El número " + numCapi + " no es capicúa");
     }
+//Este print es simplemente estetico para dar espacio en el terminal con la siguiente función
     System.out.println("");
 
 //Ejer. 2. Usamos la función esPrimo
@@ -156,6 +163,7 @@ public class Ejer1_6Tema8 {
     } else {
       System.out.println("Tu número no es primo");
     }
+//Este print es simplemente estetico para dar espacio en el terminal con la siguiente función
     System.out.println("");
 
 //Ejer. 3.Usamos la función sigPrimo
@@ -168,6 +176,7 @@ public class Ejer1_6Tema8 {
     numSigPrimo = sigPrimo(numParaSigPrimo);
 
     System.out.println("A partir de número " + numParaSigPrimo + ", el siguiente primo es: " + numSigPrimo);
+//Este print es simplemente estetico para dar espacio en el terminal con la siguiente función    
     System.out.println("");
 
 //Ejer. 4. Usamos la función potencia
@@ -184,6 +193,7 @@ public class Ejer1_6Tema8 {
     pot = potencia(numBase, numExp);
 
     System.out.println(numBase + " ^ " + numExp + " = " + pot);
+//Este print es simplemente estetico para dar espacio en el terminal con la siguiente función    
     System.out.println("");
 
 //Ejer. 5. Usamos la función digitos
@@ -196,6 +206,7 @@ public class Ejer1_6Tema8 {
     cantDig = digitos(numDig);
 
     System.out.println("El número " + numDig + " tiene " + cantDig + " dígitos");
+//Este print es simplemente estetico para dar espacio en el terminal con la siguiente función    
     System.out.println("");
 
 //Ejer. 6. Usamos la función voltea
