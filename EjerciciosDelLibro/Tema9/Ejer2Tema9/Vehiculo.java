@@ -1,5 +1,11 @@
 package EjerciciosDelLibro.Tema9.Ejer2Tema9;
 
+/**
+* Vehiculo.java
+*
+* @author SantiTru
+*/
+
 public abstract class Vehiculo {
   // atributos de clase
   private static int kilometrosTotales = 0;

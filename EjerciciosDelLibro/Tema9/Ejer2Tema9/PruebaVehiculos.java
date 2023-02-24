@@ -1,5 +1,6 @@
 package EjerciciosDelLibro.Tema9.Ejer2Tema9;
 import java.util.Scanner;
+
 /**
 * PruebaVehiculos.java
 * 2. Crea la clase Vehiculo , así como las clases Bicicleta y Coche
@@ -26,13 +27,14 @@ import java.util.Scanner;
 *
 * @author SantiTru
 */
+
 public class PruebaVehiculos {
   public static void main(String[] args) {
     int opcion = 0;
     int km;
     int caidas = 0;
-    Bicicleta bhSpeedrom = new Bicicleta(9);
-    Coche saab93 = new Coche(1900);
+    Bicicleta btween = new Bicicleta(9);
+    Coche kia = new Coche(1900);
     Scanner teclado = new Scanner(System.in);
     while (opcion != 10) {
     System.out.println(" ");
@@ -52,37 +54,37 @@ public class PruebaVehiculos {
         case 1:
         System.out.print("¿Cuántos kilómetros quiere recorrer? ");
         km = teclado.nextInt();
-        bhSpeedrom.recorre(km);
+        btween.recorre(km);
         break;
         case 2:
-        bhSpeedrom.hazCaballito();
+        btween.hazCaballito();
         break;
         case 3:
-        bhSpeedrom.Invertido();
+        btween.Invertido();
         caidas++;
         break;
         case 4:
-        bhSpeedrom.SinManos();
+        btween.SinManos();
         caidas++;
         break;
         case 5:
         System.out.print("¿Cuántos kilómetros quiere recorrer? ");
         km = teclado.nextInt();
-        saab93.recorre(km);
+        kia.recorre(km);
         break;
         case 6:
-        saab93.quemaRueda();
+        kia.quemaRueda();
         break;
         case 7:
         System.out.println("La bicicleta lleva recorridos ");
-        System.out.println(bhSpeedrom.getKilometrosRecorridos() + " Km");
+        System.out.println(btween.getKilometrosRecorridos() + " Km");
         if (caidas!=0){
           System.out.println("Te has caido " +caidas +" veces. No hagas más el tonto.");
         }
         break;
         case 8:
         System.out.println("El coche lleva recorridos ");
-        System.out.println(saab93.getKilometrosRecorridos() + " Km");
+        System.out.println(kia.getKilometrosRecorridos() + " Km");
         break;
         case 9:
         System.out.println("Los vehículos llevan recorridos ");
@@ -91,9 +93,9 @@ public class PruebaVehiculos {
           System.out.println("Te has caido " +caidas +" veces con la bicicleta. No hagas más el tonto.");
         }
         default:
-        } // switch
-      } // while
-      teclado.close();
-    }
+      } // switch
+    } // while
+    teclado.close();//cierro Scanner
   }
+}
 

@@ -1,5 +1,11 @@
 package EjerciciosDelLibro.Tema9.Ejer2Tema9;
 
+/**
+* Bicicleta.java
+*
+* @author SantiTru
+*/
+
 public class Bicicleta extends Vehiculo {
   private int pinones; // número de piñones
   public Bicicleta(int p) {
