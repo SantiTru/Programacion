@@ -1,16 +1,16 @@
 package EjerciciosDelLibro.Tema9.Ejer2Tema9;
 
 /**
-* Vehiculo.java
-*
+* @file: Vehiculo.java
+* @info: clase "Vehiculo" Ejer2Tema9
 * @author SantiTru
 */
 
 public abstract class Vehiculo {
-  // atributos de clase
+// atributos de clase
   private static int kilometrosTotales = 0;
   private static int vehiculosCreados = 0;
-  // atributos de instancia
+// atributos de instancia
   private int kilometrosRecorridos;
   public Vehiculo() {
   this.kilometrosRecorridos = 0;
@@ -21,17 +21,17 @@ public abstract class Vehiculo {
   public static int getKilometrosTotales() {
   return Vehiculo.kilometrosTotales;
   }
-  /**
-  * Hace que un vehículo recorra una distancia determinada.
-  * <p>
-  * Cuando un vehículo recorre una distancia <code>k</code>, se
-  * incrementan su propio cuentakilómetros, es decir, su atributo
-  * <code>kilometrosRecorridos</code> y también se incrementa la cuenta
-  * global de kilómetros que recorren todos los vehículos, es decir, el
-  * atributo de clase <code>kilometrosTotales</code>.
-  *
-  * @param k kilómetros a recorrer
-  */
+/**
+* Hace que un vehículo recorra una distancia determinada.
+* <p>
+* Cuando un vehículo recorre una distancia <code>k</code>, se
+* incrementan su propio cuentakilómetros, es decir, su atributo
+* <code>kilometrosRecorridos</code> y también se incrementa la cuenta
+* global de kilómetros que recorren todos los vehículos, es decir, el
+* atributo de clase <code>kilometrosTotales</code>.
+*
+* @param k kilómetros a recorrer
+*/
   public void recorre(int k) {
   this.kilometrosRecorridos += k;
   Vehiculo.kilometrosTotales += k;

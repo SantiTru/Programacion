@@ -1,8 +1,8 @@
 package EjerciciosDelLibro.Tema9.Ejer2Tema9;
 
 /**
-* Coche.java
-*
+* @file: Coche.java
+* @info: clase "Coche" Ejer2Tema9
 * @author SantiTru
 */
 

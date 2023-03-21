@@ -52,12 +52,12 @@ public class GatoSimple {
   */
   void peleaCon(GatoSimple contrincante) {
     if (this.sexo.equals("hembra")) {
-    System.out.println("no me gusta pelear");
+    System.out.println("No me gusta pelear");
       } else {
         if (contrincante.getSexo().equals("hembra")) {
-        System.out.println("no peleo contra gatitas");
+        System.out.println("No peleo contra gatitas");
         } else {
-          System.out.println("ven aquí que te vas a enterar");
+          System.out.println("Ven aquí que te vas a enterar");
         }
       }
     }

@@ -1,17 +1,22 @@
 package EjerciciosDelLibro.Tema9.Ejer2Tema9;
 
 /**
-* Bicicleta.java
-*
+* @file: Bicicleta.java
+* @info: clase "Bicicleta" Ejer2Tema9
 * @author SantiTru
 */
 
 public class Bicicleta extends Vehiculo {
-  private int pinones; // número de piñones
+//número de piñones
+  private int pinones; 
+//Constructor
   public Bicicleta(int p) {
   super();
   this.pinones = p;
   }
+/*
+* Metodos: hazCaballito, Invertido y SinManos
+*/        
   public void hazCaballito() {
     System.out.println("Estoy haciendo el caballito");
   }
