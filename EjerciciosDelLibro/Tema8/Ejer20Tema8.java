@@ -35,18 +35,16 @@ public class Ejer20Tema8{
   */
     public static int[] generaArrayInt(int x, int y, int z){
       // array
-        // nº de elementos
+      // nº de elementos
         int t=x;
 
-        // creación
+      // creación
           int[] array=new int[t]; 
 
-        // asignación de valores
+      // asignación de valores
           for(int i=0; i<t; i++){
             array[i]=(int)(Math.random()*(z-y+1)+y);
           }
-
-
 
       // return
         return array;
@@ -74,7 +72,6 @@ public class Ejer20Tema8{
 
         // cierre de scanner
           s.close();
-
 
         // debug
           System.out.println("\n");
