@@ -1,5 +1,4 @@
 package EjerciciosDelLibro.Tema8;
-
 import java.util.Scanner;
 
 /*
@@ -11,7 +10,9 @@ import java.util.Scanner;
 *4. potencia: Dada una base y un exponente devuelve la potencia.
 *5. digitos: Cuenta el número de dígitos de un número entero.
 *6. voltea: Le da la vuelta a un número.
-*@SantiTru
+*  @author: SantiTru
+*  @file: Ejer1_6Tema8.java
+*  @info: ejercicio 1-6 tema 8 Aprende Java con Ejercicios
 */
 
 public class Ejer1_6Tema8 {
