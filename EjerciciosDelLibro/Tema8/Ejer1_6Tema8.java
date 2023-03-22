@@ -72,7 +72,12 @@ public class Ejer1_6Tema8 {
     return num;
   }
 
-  //Función 4, potencia
+//Función 4, potencia
+/*
+*En la función potencia vamos a calcular la potencia de los números introducidos por teclado.
+*Para ello usamos un bucle que vaya multiplicando la base por si misma tantas veces como marca el exponente.
+*Devolvemos el acumulado.
+*/
   public static int potencia(int b, int e){
     int acum;
     acum = 1;
@@ -83,7 +88,12 @@ public class Ejer1_6Tema8 {
     return acum;
   }
 
-  //Función 5, digitos
+//Función 5, digitos
+/*
+*En la función digitos vamos a contar los digitos de un número introducido por teclado.
+*Para ello usamos un bucle que vaya dividiendo entre 10 el número y acumulando las veces.
+*Devolvemos el acumulado.
+*/
   public static int digitos(int num){
     int cantNum;
     cantNum = 0;
@@ -215,7 +225,7 @@ public class Ejer1_6Tema8 {
     System.out.print("Dime el número: ");
     int numParaVoltear;
     numParaVoltear = teclado.nextInt();
-
+//Llamamos a la función
     int numVolt;
     numVolt = voltea(numParaVoltear);
 
