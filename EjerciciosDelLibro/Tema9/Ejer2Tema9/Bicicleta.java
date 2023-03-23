@@ -25,7 +25,7 @@ public class Bicicleta extends Vehiculo {
     System.out.println("Me he caido... :()");
   }
   public void SinManos() {
-    System.out.println("Suelto el manillar!!");
+    System.out.println("Mira, mira mamá. sin manos!!");
     System.out.println("Me he caido... :()");
   }
 }

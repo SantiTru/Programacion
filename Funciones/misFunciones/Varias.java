@@ -2,7 +2,7 @@ package misFunciones;
 /*
 * Varias.java
 * Funciones matematicas Varias
-* @SantiTru
+* @author: SantiTru
 */
 public class Varias {
 /*

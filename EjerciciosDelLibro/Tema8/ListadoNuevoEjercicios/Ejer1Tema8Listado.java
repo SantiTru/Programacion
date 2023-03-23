@@ -7,7 +7,7 @@ import misFunciones.Varias;
  * Ejer1Tema8Listado.java
  * Escribe un programa que pida dos números reales por teclado y muestre por pantalla el
  * resultado de multiplicarlos.
- * @SantiTru
+ * @author: @SantiTru
  */
 
 public class Ejer1Tema8Listado {

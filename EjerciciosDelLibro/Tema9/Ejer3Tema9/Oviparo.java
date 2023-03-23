@@ -2,7 +2,7 @@ package EjerciciosDelLibro.Tema9.Ejer3Tema9;
 
 /**
   @author: SantiTru
-  @file: Ave.java
+  @file: Oviparo.java
   @info: clase "Oviparo" - ejercicio 3
 */
   //atributo: poneHuevos,

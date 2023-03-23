@@ -2,7 +2,6 @@ package EjerciciosDelLibro.Tema9.Ejer2Tema9;
 import java.util.Scanner;
 
 /**
-* PruebaVehiculos.java
 * 2. Crea la clase Vehiculo , así como las clases Bicicleta y Coche
 * como subclases de la primera. Para la clase Vehiculo , crea los
 * atributos de clase vehiculosCreados y kilometrosTotales , así como
@@ -25,6 +24,7 @@ import java.util.Scanner;
 * 10. Salir
 * Elige una opción (1-10):
 *
+* @file: PruebaVehiculos.java
 * @author SantiTru
 */
 
@@ -50,6 +50,7 @@ public class PruebaVehiculos {
     System.out.println("10. Salir");
     System.out.println("Elige una opción (1-10): ");
     opcion = teclado.nextInt();
+//Planteamos con un switch la opción elegida por el usuario y llamar a los distintos metodos
       switch (opcion) {
         case 1:
         System.out.print("¿Cuántos kilómetros quiere recorrer? ");

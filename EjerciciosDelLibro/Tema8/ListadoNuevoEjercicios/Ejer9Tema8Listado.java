@@ -7,7 +7,7 @@ import misFunciones.Varias;
 * Realiza un programa que pida introducir tres valores enteros y nos diga cuál de ellos es el más
 * elevado. Implementalo creando únicamente una función a la que le pasemos dos valores (no
 * tres) y nos devuelva el máximo de los dos valores.
-* @SantiTru
+* @author: @SantiTru
 */
 public class Ejer9Tema8Listado {
   public static void main(String[] args) {

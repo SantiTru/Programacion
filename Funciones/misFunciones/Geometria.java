@@ -2,7 +2,7 @@ package misFunciones;
 /*
  * Geometria.java
  * Funciones geometricas
- * @SantiTru
+ * @author: SantiTru
  */
 public class Geometria {
 /*

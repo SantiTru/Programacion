@@ -20,7 +20,7 @@ package EjerciciosDelLibro.Tema8;
 *    un array.
 *  @author: SantiTru
 *  @file: Ejer20Tema8.java
-*  @info: ejercicio 20 tema 8 Aprende Java con Ejercicios
+*  @info: ejercicio 21 tema 8 Aprende Java con Ejercicios
 */
 
 
