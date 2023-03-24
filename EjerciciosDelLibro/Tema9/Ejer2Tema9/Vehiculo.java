@@ -2,14 +2,13 @@ package EjerciciosDelLibro.Tema9.Ejer2Tema9;
 
 /**
 * @file: Vehiculo.java
-* @info: clase "Vehiculo" Ejer2Tema9
+* @info: clase "Vehiculo" Ejer 2 Tema 9 Aprende Java con Ejercicios
 * @author SantiTru
 */
 
 public abstract class Vehiculo {
 // atributos de clase
   private static int kilometrosTotales = 0;
-  private static int vehiculosCreados = 0;
 // atributos de instancia
   private int kilometrosRecorridos;
   public Vehiculo() {

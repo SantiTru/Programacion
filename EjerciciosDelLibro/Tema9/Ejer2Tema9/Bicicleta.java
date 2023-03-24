@@ -2,13 +2,13 @@ package EjerciciosDelLibro.Tema9.Ejer2Tema9;
 
 /**
 * @file: Bicicleta.java
-* @info: clase "Bicicleta" Ejer2Tema9
+* @info: clase "Bicicleta" Ejer 2 Tema 9 Aprende Java con Ejercicios
 * @author SantiTru
 */
 
 public class Bicicleta extends Vehiculo {
 //número de piñones
-  private int pinones; 
+  public int pinones; 
 //Constructor
   public Bicicleta(int p) {
   super();

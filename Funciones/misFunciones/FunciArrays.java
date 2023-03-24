@@ -16,16 +16,16 @@ public class FunciArrays {
 * @return array: array generado
 */
     public static int[] generaArrayInt(int x, int y, int z){
-// array
-// nº de elementos
+//array
+//nº de elementos
         int t=x;
-// creación
+//creación
           int[] array=new int[t];
-// asignación de valores
+//asignación de valores
           for(int i=0; i<t; i++){
             array[i]=(int)(Math.random()*(z-y+1)+y);
           }
-// return
+//return
         return array;
     }
 
@@ -35,16 +35,15 @@ public class FunciArrays {
 *  @return min: valor mínimo del array
 */
     public static int minimoArrayInt(int[] x){
-// variable para el máximo
+//variable para el mínimo
         int valorMin=Integer.MAX_VALUE;
-
-// recorrer array
+//recorrer array
         for(int i=0; i<x.length; i++){
           if(x[i]<valorMin){
             valorMin=x[i];
           }
         }  
-// return
+//return
         return valorMin;
     }
 
@@ -54,15 +53,15 @@ public class FunciArrays {
 *@return min: valor máximo del array
 */
     public static int maximoArrayInt(int[] x){
-// variable para el máximo
+//variable para el máximo
         int valorMax=Integer.MIN_VALUE;
-// recorrer array
+//recorrer array
         for(int i=0; i<x.length; i++){
           if(x[i]>valorMax){
             valorMax=x[i];
           }
         }
-// return
+//return
         return valorMax;
     }
 
@@ -74,14 +73,14 @@ public class FunciArrays {
 *@return media: media del array
 */
     public static int mediaArrayInt(int[] x, int y){
-// suma de los valores del array
+//suma de los valores del array
         int suma=0;
-// cálculo de la media
+//cálculo de la media
         for(int i=0; i<y; i++){
           suma+=x[i];
         }
         int media=suma/y;
-// return
+//return
         return media;
     }
 
@@ -95,15 +94,15 @@ public class FunciArrays {
 *- "false": el valor no se encuentra en el array
 */
     public static boolean estaEnArrayInt(int[] x, int y){
-// variable booleana
+//variable booleana
         boolean esta=false; 
-// bucle para recorrer el array para encontrar el valor
+//bucle para recorrer el array para encontrar el valor
         for(int i=0; i<x.length; i++){
           if(x[i]==y){
             return true;
           }
         }  
-// return predeterminado
+//return predeterminado
         return esta;
     }
   
@@ -115,17 +114,15 @@ public class FunciArrays {
 *@return pos: posición del valor en el array
 */
     public static int posicionEnArray(int[] x, int y){
-// posición
-        int pos=0;
-
-      
-// bucle para recorrer el array
+//variable para acumular la posición
+        int pos=0;     
+//bucle para recorrer el array
         for(int i=0; i<x.length; i++){
           if(x[i]==y){
             pos=i;
           }
         }    
-// return
+//return
         return pos;
     }
 
@@ -137,17 +134,17 @@ public class FunciArrays {
 *@return arrayInvertido: array invertido
 */
     public static int[] volteaArrayInt(int[] x, int y){
-// array invertido
-// creación
+//array invertido
+//creación
           int[] arrayInvertido=new int[y];
-// variable auxiliar
+//variable auxiliar
           int j=0;
-// guardando los valores de forma inversa
+//guardando los valores de forma inversa
           for(int i=y-1; i>=0; i--){
             arrayInvertido[j]=x[i];
             j++;
           }
-// return
+//return
         return arrayInvertido;
     }
 
@@ -163,9 +160,13 @@ public class FunciArrays {
         int[] arrayDerecha=new int[y];
 
         for(int i=0; i<y; i++){
-          arrayDerecha[(i+z)%y]=x[i];// el módulo calcula la nueva posición que debe obtener el valor en la posición actual, es decir, el elemento con posición "[(i+z)%y]" es igual al valor con posición 0 del array original, y así sucesivamente
+/*
+*El módulo calcula la nueva posición que debe obtener el valor en la posición actual,
+*es decir, el elemento con posición "[(i+z)%y]" es igual al valor con posición 0 
+*del array original, y así sucesivamente.
+*/
+          arrayDerecha[(i+z)%y]=x[i];
         }
-
         return arrayDerecha;
     }
 
@@ -179,29 +180,36 @@ public class FunciArrays {
 */
     public static int[] rotaIzquierdaArrayInt(int[] x, int y, int z){
       int[] arrayIzquierda=new int[y];
-
+//bucle para recorrer el array
       for(int i=0; i<y; i++){
-        arrayIzquierda[i]=x[(i+y-z)%y];// el módulo se encarga de calcular el índice exacto donde se debe colocar el valor del array original, de forma similar a la función anterior. se suma el índice actual y la longitud total del array para obtener la posición del elementos después de rotar todo el array hacia la izquierda una vez, que añadiendo el nº de rotaciones ("z"), da como resultado la posición después de rotar "z" veces hacia la izquierda
+/*
+*El módulo calcula el índice exacto donde se debe colocar el valor 
+*del array original. Se suma el índice actual y la longitud total del array para obtener la 
+*posición del elemento después de rotar todo el array hacia la izquierda una vez, 
+*añadiendo el nº de rotaciones ("z"), da como resultado la posición después de 
+*rotar "z" veces hacia la izquierda.        
+*/
+        arrayIzquierda[i]=x[(i+y-z)%y];
       }
       return arrayIzquierda;
     }
  
 /**
-*@info: función para array de los primeros números naturales
+*@info: función para array de números naturales
 *@param x: tamaño del array
-*@return arrayNaturales: array de los primeros números naturales
+*@return arrayNaturales: array de números naturales
 */
     public static int[] arrayNaturales(int x){
-// array de números naturales
+//array de números naturales
         int[] arrayNaturales=new int[x];
-// variable auxiliar  
+//variable auxiliar  
         int aux=0;
-// bucle para recorrer el array
+//bucle para recorrer el array
         for(int i=1; aux<x; i++){
           arrayNaturales[aux]=i;
           aux++;
         }
-// return
+//return
         return arrayNaturales;
     }
 }

@@ -33,8 +33,9 @@ public class PruebaVehiculos {
     int opcion = 0;
     int km;
     int caidas = 0;
+    int caballos = 230;
     Bicicleta btween = new Bicicleta(9);
-    Coche kia = new Coche(1900);
+    Coche kia = new Coche(1600);
     Scanner teclado = new Scanner(System.in);
     while (opcion != 10) {
     System.out.println(" ");
@@ -86,12 +87,19 @@ public class PruebaVehiculos {
         case 8:
         System.out.println("El coche lleva recorridos ");
         System.out.println(kia.getKilometrosRecorridos() + " Km");
+        if (kia.getKilometrosRecorridos()!=0){
+          System.out.println("Con los caballos que tiene ("+caballos +"CV) tiene que ser un pico en gasolina.");
+        }
         break;
         case 9:
         System.out.println("Los vehículos llevan recorridos ");
         System.out.println(Vehiculo.getKilometrosTotales() + " Km");
         if (caidas!=0){
           System.out.println("Te has caido " +caidas +" veces con la bicicleta. No hagas más el tonto.");
+        }
+        if (kia.getKilometrosRecorridos()!=0){
+          System.out.println("Has recorrido con el coche "+(kia.getKilometrosRecorridos() + " Km.")+ " Con los caballos que tiene ("+caballos +"CV)"+ 
+          "tiene que ser un pico en gasolina. ¡Coge la bicicleta mejor!");
         }
         default:
       } // switch
