@@ -1,12 +1,13 @@
-package misFunciones;
+package EjerciciosDelLibro.Tema8.C8_1.Funciones.misFunciones;
 
-/*
+/**
 * @file: FunciArrays.java
 * @info: Funciones para trabajar con arrays
 * @author: SantiTru
 */
 
 public class FunciArrays {
+
 /**
 * @info:función para generar un array
 * @param:
@@ -48,9 +49,9 @@ public class FunciArrays {
     }
 
 /**
-*@info: función para obtener el máximo de array
-*@param int[] x: array del que se saca el máximo
-*@return min: valor máximo del array
+*  @info: función para obtener el máximo de array
+*  @param int[] x: array del que se saca el máximo
+*  @return min: valor máximo del array
 */
     public static int maximoArrayInt(int[] x){
 //variable para el máximo
@@ -66,11 +67,11 @@ public class FunciArrays {
     }
 
 /**
-*@info: función para obtener la media del array
-*@param:
-*- "int[] x": array
-*- "y": nº de elementos totales del array
-*@return media: media del array
+*   @info: función para obtener la media del array
+*   @param:
+*   - "int[] x": array
+*   - "y": nº de elementos totales del array
+*   @return media: media del array
 */
     public static int mediaArrayInt(int[] x, int y){
 //suma de los valores del array
@@ -85,13 +86,13 @@ public class FunciArrays {
     }
 
 /**
-*@info: función para comprobar si un número está en el array
-*@param:
-*- "int[] x": array
-*- "y": valor a encontrar en el array
-*@return:
-*- "true": el valor se encuentra en el array
-*- "false": el valor no se encuentra en el array
+*   @info: función para comprobar si un número está en el array
+*   @param:
+*   - "int[] x": array
+*   - "y": valor a encontrar en el array
+*   @return:
+*   - "true": el valor se encuentra en el array
+*   - "false": el valor no se encuentra en el array
 */
     public static boolean estaEnArrayInt(int[] x, int y){
 //variable booleana
@@ -107,11 +108,11 @@ public class FunciArrays {
     }
   
 /**
-*@info: función para obtener la posición de un valor en el array
-*@param:
-*- "int[] x": array
-*- "y": valor a encontrar en el array
-*@return pos: posición del valor en el array
+*   @info: función para obtener la posición de un valor en el array
+*   @param:
+*   - "int[] x": array
+*   - "y": valor a encontrar en el array
+*   @return pos: posición del valor en el array
 */
     public static int posicionEnArray(int[] x, int y){
 //variable para acumular la posición
@@ -127,11 +128,11 @@ public class FunciArrays {
     }
 
 /**
-*@info: función para obtener el array de forma invertida
-*@param
-*- "int[] x": array a invertir
-*- "y": nº de elementos del array
-*@return arrayInvertido: array invertido
+*   @info: función para obtener el array de forma invertida
+*   @param
+*   - "int[] x": array a invertir
+*   - "y": nº de elementos del array
+*   @return arrayInvertido: array invertido
 */
     public static int[] volteaArrayInt(int[] x, int y){
 //array invertido
@@ -149,12 +150,12 @@ public class FunciArrays {
     }
 
 /**
-*@info: función para rotar n posiciones a la derecha el array
-*@param:
-*- "int[] x": array
-*- "y": nº de elementos del array
-*- "z": nº de posiciones a rotar
-*@return arrayDerecha: array rotado n posiciones a la derecha
+*   @info: función para rotar n posiciones a la derecha el array
+*   @param:
+*   - "int[] x": array
+*   - "y": nº de elementos del array
+*   - "z": nº de posiciones a rotar
+*   @return arrayDerecha: array rotado n posiciones a la derecha
 */
     public static int[] rotaDerechaArrayInt(int[] x, int y, int z){
         int[] arrayDerecha=new int[y];
@@ -171,12 +172,12 @@ public class FunciArrays {
     }
 
 /**
-*@info: función para rotar n posiciones a la izquierda el array
-*@param:
-*- "int[] x": array
-*- "y": nº de elementos del array
-*- "z": nº de posiciones a rotar
-*@return arrayIzquierda: array rotado n posiciones a la izquierda
+*   @info: función para rotar n posiciones a la izquierda el array
+*   @param:
+*   - "int[] x": array
+*   - "y": nº de elementos del array
+*   - "z": nº de posiciones a rotar
+*   @return arrayIzquierda: array rotado n posiciones a la izquierda
 */
     public static int[] rotaIzquierdaArrayInt(int[] x, int y, int z){
       int[] arrayIzquierda=new int[y];
@@ -195,9 +196,9 @@ public class FunciArrays {
     }
  
 /**
-*@info: función para array de números naturales
-*@param x: tamaño del array
-*@return arrayNaturales: array de números naturales
+*   @info: función para array de números naturales
+*   @param x: tamaño del array
+*   @return arrayNaturales: array de números naturales
 */
     public static int[] arrayNaturales(int x){
 //array de números naturales

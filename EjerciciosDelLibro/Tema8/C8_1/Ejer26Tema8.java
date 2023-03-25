@@ -1,4 +1,6 @@
 package EjerciciosDelLibro.Tema8.C8_1;
+import java.util.Scanner;
+import EjerciciosDelLibro.Tema8.C8_1.Funciones.misFunciones.FunciArrays;
 
 /*
 * Crea una biblioteca de funciones para arrays (de una dimensión) de números

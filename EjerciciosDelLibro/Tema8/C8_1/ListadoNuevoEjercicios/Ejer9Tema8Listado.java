@@ -1,7 +1,7 @@
-package EjerciciosDelLibro.Tema8.ListadoNuevoEjercicios;
+package EjerciciosDelLibro.Tema8.C8_1.ListadoNuevoEjercicios;
 //En las dos lineas siguientes importo tanto la funcion Varias como la funcion de Scanner
 import java.util.Scanner;
-import misFunciones.Varias;
+import EjerciciosDelLibro.Tema8.C8_1.Funciones.misFunciones.Varias;
 /*
 * Ejer9Tema8Listado.java
 * Realiza un programa que pida introducir tres valores enteros y nos diga cuál de ellos es el más
