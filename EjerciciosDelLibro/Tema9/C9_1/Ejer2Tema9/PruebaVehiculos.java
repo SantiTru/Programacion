@@ -1,28 +1,28 @@
-package EjerciciosDelLibro.Tema9.Ejer2Tema9;
+package EjerciciosDelLibro.Tema9.C9_1.Ejer2Tema9;
 import java.util.Scanner;
 
 /**
-* 2. Crea la clase Vehiculo , así como las clases Bicicleta y Coche
-* como subclases de la primera. Para la clase Vehiculo , crea los
-* atributos de clase vehiculosCreados y kilometrosTotales , así como
-* el atributo de instancia kilometrosRecorridos . Crea también algún
-* método específico para cada una de las subclases. Prueba las
-* clases creadas mediante un programa con un menú como el que se
-* muestra a continuación:
-*
-* VEHÍCULOS
-* =========
-* 1. Anda con la bicicleta
-* 2. Haz el caballito con la bicicleta
-* 3. Haz el invertido con la bicicleta
-* 4. Ve sin manos en la bicicleta
-* 5. Anda con el coche
-* 6. Quema rueda con el coche
-* 7. Ver kilometraje de la bicicleta
-* 8. Ver kilometraje del coche
-* 9. Ver kilometraje total
-* 10. Salir
-* Elige una opción (1-10):
+* @info: 2. Crea la clase Vehiculo , así como las clases Bicicleta y Coche
+*           como subclases de la primera. Para la clase Vehiculo , crea los
+*           atributos de clase vehiculosCreados y kilometrosTotales , así como
+*           el atributo de instancia kilometrosRecorridos . Crea también algún
+*           método específico para cada una de las subclases. Prueba las
+*           clases creadas mediante un programa con un menú como el que se
+*           muestra a continuación:
+*         
+*           VEHÍCULOS
+*           =========
+*           1. Anda con la bicicleta
+*           2. Haz el caballito con la bicicleta
+*           3. Haz el invertido con la bicicleta
+*           4. Ve sin manos en la bicicleta
+*           5. Anda con el coche
+*           6. Quema rueda con el coche
+*           7. Ver kilometraje de la bicicleta
+*           8. Ver kilometraje del coche
+*           9. Ver kilometraje total
+*           10. Salir
+*           Elige una opción (1-10):
 *
 * @file: PruebaVehiculos.java
 * @author SantiTru

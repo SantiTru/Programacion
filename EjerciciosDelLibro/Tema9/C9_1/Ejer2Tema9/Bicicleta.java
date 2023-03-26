@@ -1,4 +1,4 @@
-package EjerciciosDelLibro.Tema9.Ejer2Tema9;
+package EjerciciosDelLibro.Tema9.C9_1.Ejer2Tema9;
 
 /**
 * @file: Bicicleta.java
