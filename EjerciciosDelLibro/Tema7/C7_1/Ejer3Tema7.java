@@ -23,7 +23,7 @@ public class Ejer3Tema7{
         Scanner s=new Scanner(System.in);
 // obtención
         for(int i=0; i<10; i++){
-          System.out.print("Introduce un número: ");
+          System.out.print("Dime un número: ");
             aux[i]=s.nextInt();
         }
 // cierre de scanner
