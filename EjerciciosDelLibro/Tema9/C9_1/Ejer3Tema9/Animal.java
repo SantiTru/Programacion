@@ -19,7 +19,6 @@ public abstract class Animal {
   // constructor
     public Animal(String nombre, int edad){
       this.nombre=nombre;
-
       this.edad=edad;
     }
 

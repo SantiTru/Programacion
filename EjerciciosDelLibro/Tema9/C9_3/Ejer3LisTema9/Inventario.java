@@ -1,6 +1,12 @@
 package EjerciciosDelLibro.Tema9.C9_3.Ejer3LisTema9;
 import java.util.ArrayList;
 
+/**
+  @author: SantiTru
+  @file: Inventario.java
+  @info: clase "Inventario"
+*/
+
 public class Inventario {
   private ArrayList<Mascotas> listaAnimales;
   
@@ -25,7 +31,7 @@ public class Inventario {
           System.out.println(); 
       }
   }
-  
+    
   public void insertarAnimal(Mascotas animal) {
     listaAnimales.add(animal);
     System.out.println("Animal insertado en el inventario: " + animal.getNombre());
