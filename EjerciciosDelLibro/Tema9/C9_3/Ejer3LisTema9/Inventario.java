@@ -23,6 +23,9 @@ public class Inventario {
   public void mostrarDatosAnimal(Mascotas animal) {
       System.out.println("Tipo: " + animal.getClass().getSimpleName());
       System.out.println("Nombre: " + animal.getNombre());
+      System.out.println("Edad: " + animal.getEdad());
+      System.out.println("Estado: " + animal.getEstado());
+      System.out.println("Fecha de nacimiento: " + animal.getFechaNacimiento());
   }
   
   public void mostrarDatosTodosLosAnimales() {
