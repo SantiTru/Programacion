@@ -1,28 +1,22 @@
 package EjerciciosDelLibro.Tema9.C9_1.Ejer3Tema9;
 
 /**
-  @author: SantiTru
-  @file: Canario.java
-  @info: clase "Canario" - ejercicio 3
+*  @author: SantiTru
+*  @file: Canario.java
+*  @info: clase "Canario" - ejercicio 3
 */
 
 public class Canario extends Oviparo{
-  // constructor
+// constructor
     public Canario(String nombre, int edad){
       super(nombre, edad);
     }
-
-  /************************************/
-
-  // métodos
-    // cantar
+// métodos
+// cantar
       public void cantar(){
         System.out.println("El canario está cantando.");
       }
-
-    /****************/
-
-    // picar
+// picar
       public void picar(){
         System.out.println("El canario está picando.");
       }

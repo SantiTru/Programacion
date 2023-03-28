@@ -1,9 +1,9 @@
 package EjerciciosDelLibro.Tema9.C9_3.Ejer3LisTema9;
 
 /**
-  @author: SantiTru
-  @file: Canario.java
-  @info: clase "Canario"
+*  @author: SantiTru
+*  @file: Canario.java
+*  @info: clase "Canario"
 */
 
 public class Canario extends Aves {

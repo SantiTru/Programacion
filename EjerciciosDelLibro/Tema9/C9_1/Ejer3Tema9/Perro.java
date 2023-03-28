@@ -7,22 +7,16 @@ package EjerciciosDelLibro.Tema9.C9_1.Ejer3Tema9;
 */
 
 public class Perro extends Mamifero{
-  // constructor
+// constructor
     public Perro(String nombre, int edad){
       super(nombre, edad);
     }
-
-  /************************************/
-
-  // métodos
-    // ladrar
+// métodos
+// ladrar
       public void ladrar(){
         System.out.println("El perro está ladrando.");
       }
-
-    /****************/
-
-    // morder
+// morder
       public void morder(){
         System.out.println("El perro está mordiendo.");
       }
