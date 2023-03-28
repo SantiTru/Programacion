@@ -1,23 +1,20 @@
 package EjerciciosDelLibro.Tema9.C9_3.Ejer2LisTema9.Astros;
 
 /**
-  @author: SantiTru
-  @file: Astros.java
-  @info: clase abstracta "Astros"
+*  @author: SantiTru
+*  @file: Astros.java
+*  @info: clase abstracta "Astros"
 */
 
 public abstract class Astros{
-  // atributos
+// atributos
     private double radioEcuatorial;
     private double rotacionSobreSuEje;
     private double masa;
     private double temperaturaMedia;
     private double gravedad;
     private String nombre;
-
-  /*******************************************/
-
-  // constructor
+// constructor
     public Astros(double radioEcuatorial, double rotacionSobreSuEje, double masa, double temperaturaMedia, double gravedad, String nombre){
       this.radioEcuatorial=radioEcuatorial;
       this.rotacionSobreSuEje=rotacionSobreSuEje;
@@ -26,55 +23,34 @@ public abstract class Astros{
       this.gravedad=gravedad;
       this.nombre=nombre;
     }
-
-  /*******************************************/
-
-  // métodos
+// métodos
     // getter "radioEcuatorial"
       public double getRadioEcuatorial(){
         return this.radioEcuatorial;
       }
-
-    /***************/
-
-    // getter "rotacionSobreSuEje"
+// getter "rotacionSobreSuEje"
       public double getRotacionSobreSuEje(){
         return this.rotacionSobreSuEje;
       }
-
-    /***************/
-
-    // getter "masa"
+// getter "masa"
       public double getMasa(){
         return this.masa;
       }
-
-    /***************/
-
-    // getter "temperaturaMedia"
+// getter "temperaturaMedia"
       public double getTemperaturaMedia(){
         return this.temperaturaMedia;
       }
-
-    /***************/
-
-    // getter "gravedad"
+// getter "gravedad"
       public double getGravedad(){
         return this.gravedad;
       }
-
-    /***************/
-
-    // getter "nombre"
+// getter "nombre"
       public String getNombre(){
         return this.nombre;
       }
-
-    /***************/
-
-    /**
-      @name: "muestra"
-      @info: muestra toda la información de la que se dispone sobre el astro
-    */
+/**
+*  @name: "muestra"
+*  @info: muestra toda la información de la que se dispone sobre el astro
+*/
       public abstract String muestra();
 }

@@ -4,15 +4,15 @@ import EjerciciosDelLibro.Tema9.C9_3.Ejer2LisTema9.Astros.Planetas;
 import EjerciciosDelLibro.Tema9.C9_3.Ejer2LisTema9.Astros.Satelites;
 
 /**
-  @author: SantiTru
-  @file: PruebaAstros.java
-  @info: programa principal
+*  @author: SantiTru
+*  @file: PruebaAstros.java
+*  @info: programa principal
 */
 
 public class PruebaAstros{
   public static void main(String[] args){
-    // creación de instancias
-      // planetas
+// creación de instancias
+// planetas
         Planetas[] arrayPlanetas=new Planetas[8];// los 8 planetas del sistema solar
 
         arrayPlanetas[0]=new Planetas(2439.7, 1408, 33011, 167, 3.7, "Mercurio", 57.91, 87.97);
@@ -23,10 +23,7 @@ public class PruebaAstros{
         arrayPlanetas[5]=new Planetas(58232, 10.7, 5.6834e26, -139, 10.44, "Saturno", 1.4e9, 10759.22);
         arrayPlanetas[6]=new Planetas(25362, 17.2, 8.681e25, -197, 8.87, "Urano", 2.87e9, 30688.5);
         arrayPlanetas[7]=new Planetas(24622, 16.1, 1.0243e26, -201, 11.15, "Neptuno", 4.5e9, 60182);
-
-      /*********************/
-
-      // satélites
+// satélites
         Satelites[] arraySatelites=new Satelites[15];// 15 satélites de los más conocidos del sistema solar
 
         arraySatelites[0]=new Satelites(1737.5, 27.3, 7.342, -20, 1.62, "La Luna", 384.400, 27.3, arrayPlanetas[2]);
@@ -59,49 +56,43 @@ public class PruebaAstros{
           arrayPlanetas[7].agregarSatelite(arraySatelites[13]);
         arraySatelites[14]=new Satelites(40, 38.2021, 4.2e+16, 0, 9.8, "Hydra", 64749, 38.2, arrayPlanetas[7]);
           arrayPlanetas[7].agregarSatelite(arraySatelites[14]);
-
-    /*************************************************/
-
-    // menú
+// menú
       int opcion;
 
       do{
-        System.out.println("\n\n\n----------------------PLANETAS----------------------");
-        System.out.println("1. Mercurio");
-        System.out.println("2. Venus");
-        System.out.println("3. Tierra");
-        System.out.println("4. Marte");
-        System.out.println("5. Júpiter");
-        System.out.println("6. Saturno");
-        System.out.println("7. Urano");
-        System.out.println("8. Neptuno");
+        System.out.println("\n\n\n......................PLANETAS......................");
+        System.out.println("                      1. Mercurio");
+        System.out.println("                      2. Venus");
+        System.out.println("                      3. Tierra");
+        System.out.println("                      4. Marte");
+        System.out.println("                      5. Júpiter");
+        System.out.println("                      6. Saturno");
+        System.out.println("                      7. Urano");
+        System.out.println("                      8. Neptuno");
 
-        System.out.println("\n----------------------SATÉLITES----------------------");
-        System.out.println("9. La Luna");
-        System.out.println("10. Fobos");
-        System.out.println("11. Deimos");
-        System.out.println("12. Ío");
-        System.out.println("13. Europa");
-        System.out.println("14. Ganímedes");
-        System.out.println("15. Calisto");
-        System.out.println("16. Mimas");
-        System.out.println("17. Encélado");
-        System.out.println("18. Titán");
-        System.out.println("19. Miranda");
-        System.out.println("20. Tritón");
-        System.out.println("21. Proteo");
-        System.out.println("22. Caronte");
-        System.out.println("23. Hydra");
+        System.out.println("\n.....................SATÉLITES......................");
+        System.out.println("                     9. La Luna");
+        System.out.println("                     10. Fobos");
+        System.out.println("                     11. Deimos");
+        System.out.println("                     12. Ío");
+        System.out.println("                     13. Europa");
+        System.out.println("                     14. Ganímedes");
+        System.out.println("                     15. Calisto");
+        System.out.println("                     16. Mimas");
+        System.out.println("                     17. Encélado");
+        System.out.println("                     18. Titán");
+        System.out.println("                     19. Miranda");
+        System.out.println("                     20. Tritón");
+        System.out.println("                     21. Proteo");
+        System.out.println("                     22. Caronte");
+        System.out.println("                     23. Hydra");
 
-        System.out.println("\n24. Terminar programa");
+        System.out.println("\n                     24. Terminar programa");
 
-        System.out.print("\nIntroduce el número correspondiente al astro del que quieres obtener información: ");
+        System.out.print("\nDime el número correspondiente al astro del que quieres obtener información: ");
           Scanner input=new Scanner(System.in);
             opcion=input.nextInt();
-
-        /*************************/
-
-        // switch
+// switch
           switch(opcion){
             // planetas
               case 1:// mercurio
@@ -135,10 +126,7 @@ public class PruebaAstros{
               case 8:// neptuno
                 System.out.print(arrayPlanetas[7].muestra());
               break;
-
-            /****************/
-
-            // satélites
+// satélites
               case 9:// la luna
                 System.out.print(arraySatelites[0].muestra());
               break;
@@ -201,6 +189,5 @@ public class PruebaAstros{
           }
           input.close();
       }while(opcion!=24);
-      
   }
 }

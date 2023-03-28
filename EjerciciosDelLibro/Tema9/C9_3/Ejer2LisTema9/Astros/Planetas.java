@@ -1,21 +1,18 @@
 package EjerciciosDelLibro.Tema9.C9_3.Ejer2LisTema9.Astros;
 
 /**
-  @author: SantiTru
-  @file: Planetas.java
-  @info: clase "Planetas"
+*  @author: SantiTru
+*  @file: Planetas.java
+*  @info: clase "Planetas"
 */
 
 public class Planetas extends Astros{
-  // atributos
+// atributos
     private double distanciaAlSol;
     private double orbitaAlSol;
     private Satelites[] satelites;// array para almacenar todos los satélites de cada planeta
     private int numSatelites;// número de satélites por planeta
-
-  /****************************************/
-
-  // constructor
+// constructor
     public Planetas(double radioEcuatorial, double rotacionSobreSuEje, double masa, double temperaturaMedia, double gravedad, String nombre, double distanciaAlSol, double orbitaAlSol){
       super(radioEcuatorial, rotacionSobreSuEje, masa, temperaturaMedia, gravedad, nombre);
 
@@ -25,14 +22,11 @@ public class Planetas extends Astros{
       this.satelites=new Satelites[20];
       this.numSatelites=0;// inicialización del contador de satélites
     }
-
-  /****************************************/
-
-  // métodos
-    /**
-      @name: muestra
-      @info: muestra toda la información de la que se dispone sobre el planeta
-    */
+// métodos
+/**
+*  @name: muestra
+*  @info: muestra toda la información de la que se dispone sobre el planeta
+*/
       @Override
         public String muestra(){
           String muestra=("\n---------PLANETA---------");
@@ -53,14 +47,11 @@ public class Planetas extends Astros{
 
           return muestra;
         }
-
-    /**********************/
-
-    /**
-      @name: agregarSatelite
-      @info: agregar los satélites correspondientes a cada planeta
-      @param satelite: satélite a agregar
-    */
+/**
+*  @name: agregarSatelite
+*  @info: agregar los satélites correspondientes a cada planeta
+*  @param satelite: satélite a agregar
+*/
       public void agregarSatelite(Satelites satelite){
         if(this.numSatelites<this.satelites.length){
           this.satelites[this.numSatelites]=satelite;

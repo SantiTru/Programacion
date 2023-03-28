@@ -1,20 +1,17 @@
 package EjerciciosDelLibro.Tema9.C9_3.Ejer2LisTema9.Astros;
 
 /**
-  @author: SantiTru
-  @file: Satelites.java
-  @info: clase "Satelites"
+*  @author: SantiTru
+*  @file: Satelites.java
+*  @info: clase "Satelites"
 */
 
 public class Satelites extends Astros{
-  // atributos
+// atributos
     private double distanciaAlPlaneta;
     private double orbitaPlanetaria;
     private Planetas planeta;
-
-  /********************************************/
-
-  // constructor
+// constructor
     public Satelites(double radioEcuatorial, double rotacionSobreSuEje, double masa, double temperaturaMedia, double gravedad, String nombre, double distanciaAlPlaneta, double orbitaPlanetaria, Planetas planeta){
       super(radioEcuatorial, rotacionSobreSuEje, masa, temperaturaMedia, gravedad, nombre);
 
@@ -22,14 +19,11 @@ public class Satelites extends Astros{
       this.orbitaPlanetaria=orbitaPlanetaria;
       this.planeta=planeta;
     }
-
-  /********************************************/
-
-  // métodos
-    /**
-      @name: muestra
-      @info: muestra toda la información de la que se dispone sobre el satélite
-    */
+// métodos
+/**
+*  @name: muestra
+*  @info: muestra toda la información de la que se dispone sobre el satélite
+*/
       @Override
       public String muestra(){
         String muestra=("\n---------SATÉLITE---------");

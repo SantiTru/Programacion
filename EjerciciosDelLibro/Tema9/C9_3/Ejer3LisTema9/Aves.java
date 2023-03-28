@@ -13,8 +13,6 @@ public abstract class Aves extends Mascotas {
     super(nombre, edad, estado, fechaNacimiento);
     this.nombre = nombre;
   }
-
-  
   public String getNombre() {
       return nombre;
   }  
