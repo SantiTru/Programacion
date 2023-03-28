@@ -4,7 +4,7 @@ import EjerciciosDelLibro.Tema9.C9_3.Ejer2LisTema9.Astros.Planetas;
 import EjerciciosDelLibro.Tema9.C9_3.Ejer2LisTema9.Astros.Satelites;
 
 /**
-*  @author: SantiTru
+*  @author: Christian Millán Soria
 *  @file: PruebaAstros.java
 *  @info: programa principal
 */

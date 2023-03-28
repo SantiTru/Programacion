@@ -1,7 +1,7 @@
 package EjerciciosDelLibro.Tema9.C9_3.Ejer2LisTema9.Astros;
 
 /**
-*  @author: SantiTru
+*  @author: Christian Millán Soria
 *  @file: Satelites.java
 *  @info: clase "Satelites"
 */
