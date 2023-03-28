@@ -1,7 +1,7 @@
 package EjemplosDelLibro;
 /**
-* GatoSimple.java
-* Definición de la clase GatoSimple
+* @file: GatoSimple.java
+* @info: Definición de la clase GatoSimple
 * @author SantiTru
 */
 public class GatoSimple {
@@ -30,7 +30,7 @@ public class GatoSimple {
   void ronronea() {
   System.out.println("mrrrrrr");
   }
-  /**
+/**
 * Hace que el gato coma.
 * A los gatos les gusta el pescado, si le damos otra comida
 * la rechazará.

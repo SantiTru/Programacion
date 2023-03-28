@@ -87,9 +87,9 @@ public class PruebaAstros{
         System.out.println("                     22. Caronte");
         System.out.println("                     23. Hydra");
 
-        System.out.println("\n                     24. Terminar programa");
+        System.out.println("\n                     24. Exit");
 
-        System.out.print("\nDime el número correspondiente al astro del que quieres obtener información: ");
+        System.out.print("\nDime el número del astro para obtener información: ");
           Scanner input=new Scanner(System.in);
             opcion=input.nextInt();
 // switch
