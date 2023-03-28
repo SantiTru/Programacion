@@ -24,12 +24,14 @@ public class Gatitos {
     System.out.print(this.nombre + ": ");
     if (sardinas >= s) {
       for (int i = 0; i < s; i++) {
-        System.out.print("Nam...");
+        System.out.println(" ");
+        System.out.print("Ñam...");
         sardinas--;
         sardinasComidas++;
       }
       System.out.println();
     } else {
+      System.out.println(" ");
       System.out.println("Para ti no hay sardinas. Lo siento... ");
     }
   }

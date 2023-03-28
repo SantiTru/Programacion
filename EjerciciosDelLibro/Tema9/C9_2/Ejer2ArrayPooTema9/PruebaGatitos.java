@@ -22,6 +22,7 @@ public class PruebaGatitos {
     for (Gatitos g : gato) {
       int sardinas = (int) (Math.random() * 11);
       g.come(sardinas);
+      System.out.println(" ");
       System.out.println("Su nombre es: " + g.getNombre() + ", su color es: " + g.getColor() + " y es : " + g.getSexo()
           + ", Sardinas comidas: " + g.getSardinasComidas());
       System.out.println(" ");
