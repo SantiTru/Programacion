@@ -361,5 +361,15 @@ public static int minimo(int a, int b){
         }
         return letra;
     }  
-}
 
+
+/**
+*  @info: función para comprobar si es un número
+*  @param:
+*    - "str": cadena a comprobar
+*  @return: true si es un número
+*/
+  public static boolean esNumerico(String str){
+    return str != null && str.matches("[0-9.]+");
+  }
+}
