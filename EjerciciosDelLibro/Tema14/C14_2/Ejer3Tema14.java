@@ -22,7 +22,7 @@ public class Ejer3Tema14 {
     System.out.println("4. Error IndexOutOfBoundsException");
     System.out.println("5. Error ArithmeticException");
     System.out.println("Error generado aleatoriamente número: "+ (numeroAleatorio+1));
-//Hacemos un bloque try-catch para capturar la excepción generada aleatoriamente y mostrar su tipo y mensaje.
+//Hacemos un bloque try-catch para capturar la excepción generada aleatoriamente y mostrar su tipo.
     try {
       switch (numeroAleatorio) {
         case 0:
@@ -35,11 +35,10 @@ public class Ejer3Tema14 {
           throw new IndexOutOfBoundsException();
         case 4:
           throw new ArithmeticException();
-      }
-      
+//Al "lanzar" las excepciones (throw) no es necesario poner los breaks en cada case ya que el programa se interrumpe y avanaza al bloque del catch
+      }     
     } catch (Exception e) {
       System.out.println("Exception type: " + e.getClass());
-      System.out.println("Exception message: " + e.getMessage());
     }
   }
 }
