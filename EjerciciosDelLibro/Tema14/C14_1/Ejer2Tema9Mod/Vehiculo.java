@@ -7,9 +7,9 @@ package EjerciciosDelLibro.Tema14.C14_1.Ejer2Tema9Mod;
 */
 
 public abstract class Vehiculo {
-// atributos de clase
+//atributos de clase
   private static int kilometrosTotales = 0;
-// atributos de instancia
+//atributos de instancia
   private int kilometrosRecorridos;
   public Vehiculo() {
   this.kilometrosRecorridos = 0;
