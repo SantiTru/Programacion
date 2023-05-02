@@ -1,4 +1,4 @@
-
+/*
 public class Ficha {
 
   //atributos
@@ -31,3 +31,4 @@ public class Ficha {
   }
 
 }
+*/

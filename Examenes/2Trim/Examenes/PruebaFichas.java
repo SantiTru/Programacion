@@ -1,4 +1,4 @@
-
+/*
 public class PruebaFichas {
   public static void main(String[] args) {
     Ficha f1 = new Ficha(6, 1);
@@ -18,3 +18,4 @@ public class PruebaFichas {
   }
 
 }
+*/
