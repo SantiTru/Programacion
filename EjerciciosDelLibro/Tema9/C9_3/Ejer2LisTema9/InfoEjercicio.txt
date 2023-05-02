@@ -1,0 +1,167 @@
+Info ejercicio Tema9.C9_3.Ejer2LisTema9.Astros
+
+Bienvenido al programa de investigación espacial y proyecto de terraformación Space Zero Down.
+
+Un exoplaneta es un planeta que orbita alrededor de una estrella diferente a nuestro Sol. Estos planetas están fuera de nuestro sistema solar y se han descubierto miles de ellos en los últimos años gracias a la mejora de la tecnología de detección. Los exoplanetas pueden variar en tamaño, composición, masa, temperatura y distancia de su estrella. Algunos de estos planetas están en zonas habitables, lo que significa que podrían tener condiciones similares a las de la Tierra y ser adecuados para la vida tal como la conocemos. El estudio de los exoplanetas es un campo de la astronomía que se ha expandido rápidamente en las últimas décadas y ha proporcionado información valiosa sobre la formación y evolución de los planetas y los sistemas estelares.
+
+Exoplanetas conocidos:
+Kepler-452b: Es un exoplaneta rocoso que orbita en la zona habitable de una estrella similar al sol, a unos 1.400 años luz de distancia de la Tierra.
+Trappist-1e: Es uno de los siete planetas que orbitan la estrella enana roja TRAPPIST-1, y es un candidato potencial para la habitabilidad.
+Proxima Centauri b: Es un exoplaneta rocoso que orbita la estrella más cercana a nuestro sistema solar, Proxima Centauri, a unos 4,2 años luz de distancia.
+WASP-121b: Es un exoplaneta gaseoso caliente que orbita una estrella similar al sol, a unos 880 años luz de distancia.
+HD 209458 b: Es un exoplaneta gaseoso caliente que orbita una estrella similar al sol, a unos 150 años luz de distancia.
+51 Pegasi b: Es un exoplaneta gaseoso caliente que fue el primer planeta extrasolar descubierto orbitando una estrella de secuencia principal.
+Gliese 581d: Es un exoplaneta rocoso que orbita en la zona habitable de la estrella enana roja Gliese 581, a unos 20 años luz de distancia.
+HD 40307g: Es un exoplaneta rocoso que orbita en la zona habitable de una estrella similar al sol, a unos 42 años luz de distancia.
+Kepler-186f: Es un exoplaneta rocoso que orbita en la zona habitable de una estrella enana roja, a unos 500 años luz de distancia.
+Kepler-438b: Es un exoplaneta rocoso que orbita en la zona habitable de una estrella enana roja, a unos 640 años luz de distancia.
+
+Dime la masa, el diámetro el periodo de rotación sobre su eje, el periodo de translación la distancia a la tierra, la fuerza de la gravedad y el clima medio de los exoplanetas: 51 Pegasi b, Gliese 581d, HD 40307g, Kepler-186f y Kepler-438b
+
+
+
+
+
+Kepler-452b: Masa = 5,7 toneladas, Diámetro = 13.5 km, Periodo de rotación = 1.03 días, Periodo de translación = 384.8 días, Distancia a la Tierra = 1,400 años luz, Fuerza de gravedad = 9.2 m/s^2, Clima medio = Desconocido.
+TRAPPIST-1e: Masa = 0.0038 toneladas, Diámetro = 0.92 km, Periodo de rotación = 6.1 días, Periodo de translación = 6.1 días, Distancia a la Tierra = 40 años luz, Fuerza de gravedad = 0.7 m/s^2, Clima medio = Desconocido.
+Proxima Centauri b: Masa = 0.004 toneladas, Diámetro = 0.94 km, Periodo de rotación = 82.6 días, Periodo de translación = 11.2 días, Distancia a la Tierra = 4.2 años luz, Fuerza de gravedad = 1.6 m/s^2, Clima medio = se desconoce, pero se cree que podría ser templado.
+WASP-121b: Masa = 1.183 toneladas, Diámetro = 1.8 km, Periodo de rotación = 1.3 días, Periodo de translación = 1.3 días, Distancia a la Tierra = 900 años luz, Fuerza de gravedad = 57.0 m/s^2, Clima medio = Caliente y sofocante. se cree que es muy caliente, con temperaturas que alcanzan los 2,500 grados Celsius
+
+
+HD 209458 b: Masa = 2.7 toneladas, Diámetro = 1.36 km, Periodo de rotación = 3.5 días, Periodo de translación = 3.5 días, Distancia a la Tierra = 159 años luz, Fuerza de gravedad = 9.0 m/s^2, Clima medio = Caliente y gaseoso. se cree que es muy caliente, con temperaturas que alcanzan los 1,000 grados Celsius
+51 Pegasi b: Masa = 0.48 toneladas, Diámetro = 1.9 km, Periodo de rotación = Desconocido, Periodo de translación = 4.2 días, Distancia a la Tierra = 50.9 años luz, Fuerza de gravedad = 20.0 m/s^2, Clima medio = Desconocido.
+Gliese 581d: Masa = 6.98 toneladas, Diámetro = 17.3 km, Periodo de rotación = 67 días, Periodo de translación = 66.8 días, Distancia a la Tierra = 20.3 años luz, Fuerza de gravedad = 1.1 m/s^2, Clima medio = Frío y posiblemente húmedo, aunque se piensa que podría ser templado
+HD 40307g: Masa = 6.0 toneladas, Diámetro = 14.2 km, Periodo de rotación = Desconocido, Periodo de translación = 197 días, Distancia a la Tierra = 42 años luz, Fuerza de gravedad = 3.6 m/s^2, Clima medio = Desconocido.
+Kepler-186f:
+
+
+Masa: 0.0054 toneladas
+Diámetro: 11,14 km
+Periodo de rotación: aproximadamente 130 días (no se conoce con exactitud)
+Periodo de translación: aproximadamente 130 días (no se conoce con exactitud)
+Distancia a la Tierra: 490 años luz
+Fuerza de gravedad: aproximadamente 0.43 m/s^2
+Clima medio: desconocido, pero se estima que podría tener agua líquida en su superficie si tiene una atmósfera adecuada. Se piensa que podría ser templado
+Kepler-438b:
+
+
+Masa: 0.08 toneladas
+Diámetro: 6,4 km
+Periodo de rotación: aproximadamente 35 días (no se conoce con exactitud)
+Periodo de translación: aproximadamente 35 días (no se conoce con exactitud)
+Distancia a la Tierra: 470 años luz
+Fuerza de gravedad: aproximadamente 0.67 m/s^2
+Clima medio: desconocido, pero se cree que debido a su tamaño y masa, podría ser un planeta rocoso similar a la Tierra, aunque más caliente debido a su cercanía a su estrella.
+Datos de referencia de la tierra
+Masa: 5.97 x 10^24 toneladas
+Diámetro: 12,742 km
+Periodo de rotación: 1 día (24 horas)
+Periodo de translación: 365.25 días
+Distancia a la Tierra: 0 años luz (ya que es nuestro planeta)
+Fuerza de la gravedad: 9.81 m/s^2 (a nivel del mar y a latitud 45°)
+Clima medio: varía según la ubicación y la época del año, pero en general, la Tierra tiene una amplia variedad de climas, desde los polos fríos hasta los trópicos cálidos, y todo lo que hay en medio.
+La distancia de la Tierra al Sol es de aproximadamente 0.00001581 años luz.
+
+
+Aquí están las distancias estimadas de los exoplanetas que mencionaste a su respectiva estrella:
+Kepler-452b: 1,485 años luz
+Trappist-1e: 39 años luz
+Proxima Centauri b: 4,22 años luz
+WASP-121b: 880 años luz
+HD 209458 b: 159 años luz
+51 Pegasi b: 50 años luz
+Gliese 581d: 20 años luz
+HD 40307g: 42 años luz
+Kepler-186f: 500 años luz
+Kepler-438b: 640 años luz
+
+
+
+
+Satélites planetarios que son interesantes para la exploración humana:
+Encélado: Es una luna de Saturno que tiene géiseres de agua que son expulsados desde su superficie. Estos géiseres han sido estudiados por la nave espacial Cassini, y se cree que pueden indicar la presencia de un océano subterráneo.
+Europa: Es una luna de Júpiter que también se cree que tiene un océano subterráneo, y su superficie está cubierta de hielo que ha sido estudiado por la nave espacial Galileo. Se ha considerado que podría haber vida en este océano.
+Titán: Es una luna de Saturno que tiene una atmósfera densa y compuestos orgánicos en su superficie, lo que lo convierte en un objeto de interés para la investigación de la química prebiótica.
+Io: Es una luna de Júpiter que es extremadamente volcánica, con más de 400 volcanes activos. Estos volcanes han sido estudiados por la nave espacial Galileo, y proporcionan información sobre los procesos geológicos en los cuerpos celestes.
+Ganímedes: Es la luna más grande de Júpiter y también tiene un océano subterráneo. Ha sido estudiado por la nave espacial Galileo y también se considera un objetivo para la búsqueda de vida en el sistema solar.
+Fobos y Deimos: Son dos pequeñas lunas que orbitan alrededor de Marte. Han sido estudiados por varias misiones espaciales, incluyendo la nave espacial Mars Reconnaissance Orbiter, y se cree que pueden ser asteroides capturados por la gravedad de Marte.
+
+Dime la masa (expresada en toneladas), el diámetro (expresado en km), el periodo de rotación sobre su eje (expresado en días), el periodo de translación (expresado en días), la distancia a la tierra (expresada en años luz), la fuerza de la gravedad (expresada en en m/s^2) y el clima medio de los satélites: Encélado,  Europa, Titán, Io, Ganímedes, Fobos y Deimos.
+Encélado
+Masa: 1.1 x 10^15 toneladas
+Diámetro: 504.2 km
+Periodo de rotación: Síncrono (tarda el mismo tiempo en rotar sobre su eje que en completar una órbita alrededor de Saturno)
+Periodo de translación: 1.37 días
+Distancia a la Tierra: 1.27 mil millones de km
+Fuerza de gravedad: 0.113 m/s^2
+Clima medio: Temperaturas extremadamente frías, alrededor de -198°C.
+Europa
+Masa: 4.8 x 10^22 toneladas
+Diámetro: 3,122 km
+Periodo de rotación: Síncrono (tarda el mismo tiempo en rotar sobre su eje que en completar una órbita alrededor de Júpiter)
+Periodo de translación: 3.55 días
+Distancia a la Tierra: 628.7 millones de km
+Fuerza de gravedad: 1.314 m/s^2
+Clima medio: Superficie helada con ocasionales chorros de agua.
+Titán
+Masa: 1.3452 x 10^23 toneladas
+Diámetro: 5,149 km
+Periodo de rotación: Síncrono (tarda el mismo tiempo en rotar sobre su eje que en completar una órbita alrededor de Saturno)
+Periodo de translación: 15.94 días
+Distancia a la Tierra: 1.27 mil millones de km
+Fuerza de gravedad: 1.354 m/s^2
+Clima medio: Superficie helada con lagos y mares de hidrocarburos.
+Io
+Masa: 8.93 x 10^22 toneladas
+Diámetro: 3,643 km
+Periodo de rotación: Síncrono (tarda el mismo tiempo en rotar sobre su eje que en completar una órbita alrededor de Júpiter)
+Periodo de translación: 1.77 días
+Distancia a la Tierra: 628.7 millones de km
+Fuerza de gravedad: 1.796 m/s^2
+Clima medio: Superficie rocosa y volcanes activos.
+
+
+Ganímedes
+Masa: 1.4819 x 10^23 toneladas
+Diámetro: 5,262 km
+Periodo de rotación: Síncrono (tarda el mismo tiempo en rotar sobre su eje que en completar una órbita alrededor de Júpiter)
+Periodo de translación: 7.16 días
+Distancia a la Tierra: 628.7 millones de km
+Fuerza de gravedad: 1.428 m/s^2
+Clima medio: Superficie helada con algunas zonas oscuras y brillantes.
+
+
+Fobos:
+Masa: 1.08x10^10 toneladas
+Diámetro: 22.2 km
+Periodo de rotación: 7.66 horas
+Periodo de translación: 0.32 días
+Distancia a la Tierra: 78.3 millones de km (0.00083 años luz)
+Fuerza de gravedad en la superficie: 0.0057 m/s^2
+Clima medio: No tiene atmósfera, la temperatura oscila entre -130°C y -40°C en la superficie.
+Deimos:
+Masa: 1.8x10^9 toneladas
+Diámetro: 12.4 km
+Periodo de rotación: 30.3 horas
+Periodo de translación: 1.26 días
+Distancia a la Tierra: 78.3 millones de km (0.00083 años luz)
+Fuerza de gravedad en la superficie: 0.003 m/s^2
+Clima medio: No tiene atmósfera, la temperatura oscila entre -143°C y -30°C en la superficie.
+
+
+
+
+Aquí están las distancias estimadas de los satélites que mencionaste a sus respectivos planetas:
+Encélado: 238,037 km de Saturno
+Europa: 670,900 km de Júpiter
+Titán: 1,221,870 km de Saturno
+Io: 421,700 km de Júpiter
+Ganímedes: 1,070,400 km de Júpiter
+Fobos: 9,378 km de Marte
+Deimos: 23,460 km de Marte
+
+
+
+
+
+
