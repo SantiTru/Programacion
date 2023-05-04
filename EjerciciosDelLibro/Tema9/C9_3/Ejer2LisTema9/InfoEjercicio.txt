@@ -162,7 +162,13 @@ Fobos: 9,378 km de Marte
 Deimos: 23,460 km de Marte
 
 
+La masa de la Luna es aproximadamente 7.34 x 10^22 toneladas.
+El diámetro de la Luna es de aproximadamente 3,474 km.
+El periodo de rotación sobre su eje es de aproximadamente 27.3 días.
+El periodo de translación alrededor de la Tierra es de aproximadamente 27.3 días.
+La distancia promedio entre la Tierra y la Luna es de aproximadamente 1.28 segundos luz.
+La fuerza de la gravedad en la superficie de la Luna es de aproximadamente 1.62 m/s^2.
+En cuanto al clima, la Luna no tiene una atmósfera significativa y no tiene un clima como la Tierra.
 
-
-
+Luna(Luna, double distanciaASuPlaneta, double masa, double diametro, double periodoRotacion, double periodoTranslacion, double distanciaALaTierra, double gravedad, String clima)
 
