@@ -35,7 +35,7 @@ public class Tierra extends ObjetosCelestes {
       public String informacion(){
         String informacion=("\n**********PLANETA HABITADO DE REFERENCIA**********");
           informacion+="\nNombre del planeta: "+getNombre();
-          informacion+="\nDistancia con su estrella: "+this.distanciaEstrella+" Km";
+          informacion+="\nDistancia con el sol: "+this.distanciaEstrella+" Km";
           informacion+="\nMasa del planeta: "+getMasa()+" toneladas";
           informacion+="\nDiametro del planeta: "+getDiametro()+" Km";
           informacion+="\nPeriodo de Rotación del planeta: "+getPeriodoRotacion()+" días";

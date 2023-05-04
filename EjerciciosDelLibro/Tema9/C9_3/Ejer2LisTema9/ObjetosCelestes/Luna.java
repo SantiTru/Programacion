@@ -25,12 +25,12 @@ public class Luna extends ObjetosCelestes{
         public String informacion(){
           String informacion=("\n**********SATÉLITE DE REFERENCIA**********");
             informacion+="\nNombre del satélite: "+getNombre();
-            informacion+="\nDistancia con su planeta: "+this.distanciaASuPlaneta+" Km";
+            informacion+="\nDistancia con la Tierra: "+this.distanciaASuPlaneta+" Km";
             informacion+="\nMasa del satélite: "+getMasa()+" toneladas";
             informacion+="\nDiametro del satélite: "+getDiametro()+" Km";
             informacion+="\nPeriodo de Rotación del satélite: "+getPeriodoRotacion()+" días";
             informacion+="\nPeriodo de Translación del satélite: "+getPeriodoTranslacion()+" días";
-            informacion+="\nDistancia a la Tierra del satélite: "+getDistanciaALaTierra()+" años luz";
+            //informacion+="\nDistancia a la Tierra del satélite: "+getDistanciaALaTierra()+" años luz";
             informacion+="\nGravedad del satélite: "+getGravedad()+" m/s^2";
             informacion+="\nClima del satélite: "+getClima();
             return informacion;
