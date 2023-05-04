@@ -10,7 +10,17 @@ public class Exoplanetas extends ObjetosCelestes {
 
     private double distanciaEstrella;
 
-    public Exoplanetas(String nombre, double distanciaEstrella, double masa, double diametro, double periodoRotacion, double periodoTranslacion, double distanciaALaTierra, double gravedad, String clima){
+    public Exoplanetas(
+      String nombre, 
+      double distanciaEstrella, 
+      double masa, 
+      double diametro, 
+      double periodoRotacion, 
+      double periodoTranslacion, 
+      double distanciaALaTierra, 
+      double gravedad, 
+      String clima
+      ){
     super(nombre, masa, diametro, periodoRotacion, periodoTranslacion, distanciaALaTierra, gravedad, clima);
 
     this.distanciaEstrella=distanciaEstrella;

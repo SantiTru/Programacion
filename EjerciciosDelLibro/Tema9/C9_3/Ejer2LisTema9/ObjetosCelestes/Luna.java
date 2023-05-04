@@ -2,15 +2,15 @@ package EjerciciosDelLibro.Tema9.C9_3.Ejer2LisTema9.ObjetosCelestes;
 
 /**
 *  @author: SantiTru
-*  @file: Satelites.java
-*  @info: clase "Satelites" hija de ObjetosCelestes. Programa principal SpaceZeroDown
+*  @file: Luna.java
+*  @info: clase "Luna" hija de ObjetosCelestes. Programa principal SpaceZeroDown
 */
 
-public class Satelites extends ObjetosCelestes{
+public class Luna extends ObjetosCelestes{
 
     private double distanciaASuPlaneta;   
 
-    public Satelites(String nombre, double distanciaASuPlaneta, double masa, double diametro, double periodoRotacion, double periodoTranslacion, double distanciaALaTierra, double gravedad, String clima){
+    public Luna(String nombre, double distanciaASuPlaneta, double masa, double diametro, double periodoRotacion, double periodoTranslacion, double distanciaALaTierra, double gravedad, String clima){
       super(nombre, masa, diametro, periodoRotacion, periodoTranslacion, distanciaALaTierra, gravedad, clima);
   
       this.distanciaASuPlaneta=distanciaASuPlaneta;
@@ -23,7 +23,7 @@ public class Satelites extends ObjetosCelestes{
   
       @Override
         public String informacion(){
-          String informacion=("\n**********SATÉLITES SUSCEPTIBLES DE TERRAFORMACIÓN**********");
+          String informacion=("\n**********SATÉLITE DE REFERENCIA**********");
             informacion+="\nNombre del satélite: "+getNombre();
             informacion+="\nDistancia con su planeta: "+this.distanciaASuPlaneta+" Km";
             informacion+="\nMasa del satélite: "+getMasa()+" toneladas";
