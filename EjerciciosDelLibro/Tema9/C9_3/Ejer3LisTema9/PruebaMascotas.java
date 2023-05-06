@@ -51,7 +51,7 @@ public class PruebaMascotas {
     System.out.println();
     
 // Eliminamos un animal
-    System.out.println("Eliminando a Luna el gato...");
+    System.out.println("Eliminando a Perry el gato...");
     inventario.eliminarAnimal(gato);
     
 // Mostramos la lista de animales actualizada
@@ -66,6 +66,7 @@ public class PruebaMascotas {
 // Mostramos la lista de animales después de vaciar el inventario
     System.out.println("Lista de animales después de vaciar el inventario:");
     inventario.mostrarListaAnimales();
+    System.out.println("Tá vacio");
     
   }
   
