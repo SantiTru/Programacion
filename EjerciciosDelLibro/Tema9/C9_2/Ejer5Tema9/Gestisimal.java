@@ -222,12 +222,12 @@ public class Gestisimal {
           break;
 //Opción del mené "Borrar todo el stock"
           case 7:
-          pintaTitulo("BORRADO DE DATOS");
+          pintaTitulo("BORRADO DE STOCK");
           borrarStock();
-          System.out.println("Datos borrados.");
+          System.out.println("Stock borrado.");
       } //Cerramos el switch
     } while (opcion != 8);
-    System.out.println("Gracias por utilizar nuestro programa. ¡Hasta Luego Lucas!");
+    System.out.println("\u001B[31mGracias por utilizar nuestro programa. ¡Hasta Luego Lucas!\033[0m");
     teclado.close();
   }
 

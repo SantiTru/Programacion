@@ -12,7 +12,7 @@ package EjerciciosDelLibro.Tema9.C9_2.Ejer2ArrayPooTema9;
 public class PruebaGatitos {
   public static void main(String[] args) {
     Gatitos[] gato = new Gatitos[4];
-// Se describen los 4 objetos de array inicializado anteriormente y se definen sus características
+//Se describen los 4 objetos de array inicializado anteriormente y se definen sus características
     gato[0] = new Gatitos("Alfredo", "atigrado", "macho");
     gato[1] = new Gatitos("Copito", "blanco", "hembra");
     gato[2] = new Gatitos("Trasto", "negro", "macho");

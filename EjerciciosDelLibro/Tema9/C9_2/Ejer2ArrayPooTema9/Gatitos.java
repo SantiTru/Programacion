@@ -7,31 +7,31 @@ package EjerciciosDelLibro.Tema9.C9_2.Ejer2ArrayPooTema9;
 */
 
 public class Gatitos {
-// Aqui estan las variables y los atributos
+//Aqui estan las variables y los atributos
   String nombre;
   String color;
   String sexo;
   static int sardinas = 10;
   int sardinasComidas = 0;
-// constructor
+//constructor
   public Gatitos(String nombre, String color, String sexo) {
     this.nombre=nombre;
     this.color = color;
     this.sexo = sexo;
   }
-// método especifico de las sardinas
+//método especifico de las sardinas
   public void come(int s) {
 
     System.out.print(this.nombre + ": ");
     for (int i = 1; i <= s; i++) {
         if (sardinas == 0) {
           System.out.println(" ");
-          System.out.println("No quedan más sardinas. Lo siento... ");
+          System.out.println("\u001B[31mNo quedan más sardinas. Lo siento...\033[0m");
           break;
         
         } else {
         System.out.println(" ");
-        System.out.print("Ñam...");
+        System.out.print("\033[0;36mÑam...\033[0m");
         sardinas--;
         sardinasComidas++;
         System.out.println(); 
