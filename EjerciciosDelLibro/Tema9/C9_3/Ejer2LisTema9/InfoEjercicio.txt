@@ -1,4 +1,4 @@
-Info ejercicio Tema9.C9_3.Ejer2LisTema9.Astros
+Info ejercicio Tema9.C9_3.Ejer2LisTema9.ObjetosCelestes
 
 Bienvenido al programa de investigación espacial y proyecto de terraformación Space Zero Down.
 
@@ -75,16 +75,16 @@ prueba("Prueba", 1.28, "7,34 x 10^22", 3474.00, 27.3, 27.3, 1.28, 162, "Prueba")
 
 Distancias estimadas de los exoplanetas a su respectiva estrella:
 
-Kepler-452b: 1,485 años luz
-Trappist-1e: 39 años luz
-Proxima Centauri b: 4,22 años luz
-WASP-121b: 880 años luz
-HD 209458 b: 159 años luz
-51 Pegasi b: 50 años luz
-Gliese 581d: 20 años luz
-HD 40307g: 42 años luz
-Kepler-186f: 500 años luz
-Kepler-438b: 640 años luz
+Kepler-452b: 1 UA (distancia similar a la Tierra al Sol)
+Trappist-1e: 0,029 UA
+Proxima Centauri b: 0,05 UA
+WASP-121b: 0,025 UA
+HD 209458 b: 0,047 UA
+51 Pegasi b: 0,052 UA
+Gliese 581d: 0,22 UA
+HD 40307g: 0,135 UA
+Kepler-186f: 0,037 UA
+Kepler-438b: 0,166 UA
 
 
 

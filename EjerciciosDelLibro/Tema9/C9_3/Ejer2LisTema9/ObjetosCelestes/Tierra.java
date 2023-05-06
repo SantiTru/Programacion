@@ -31,7 +31,7 @@ public class Tierra extends ObjetosCelestes {
     informacion += "\nDistancia con el sol: " + this.distanciaEstrella + " Km";
     informacion += "\nMasa del planeta: " + getMasa() + " toneladas";
     informacion += "\nDiametro del planeta: " + getDiametro() + " Km";
-    informacion += "\nPeriodo de Rotación del planeta: " + getPeriodoRotacion() + " días";
+    informacion += "\nPeriodo de Rotación del planeta: " + getPeriodoRotacion() + " horas";
     informacion += "\nPeriodo de Translación del planeta: " + getPeriodoTranslacion() + " días";
     informacion += "\nGravedad del planeta: " + getGravedad() + " m/s^2";
     informacion += "\nClima del planeta: " + getClima();

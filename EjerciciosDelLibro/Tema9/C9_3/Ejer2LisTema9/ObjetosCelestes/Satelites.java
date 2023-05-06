@@ -8,12 +8,14 @@ package EjerciciosDelLibro.Tema9.C9_3.Ejer2LisTema9.ObjetosCelestes;
 
 public class Satelites extends ObjetosCelestes{
 
-    private double distanciaASuPlaneta;   
+    private double distanciaASuPlaneta;
+    private String info;   
 
-    public Satelites(String nombre, double distanciaASuPlaneta, String masa, double diametro, double periodoRotacion, double periodoTranslacion, double distanciaALaTierra, double gravedad, String clima){
+    public Satelites(String nombre, String info, double distanciaASuPlaneta, String masa, double diametro, double periodoRotacion, double periodoTranslacion, double distanciaALaTierra, double gravedad, String clima){
       super(nombre, masa, diametro, periodoRotacion, periodoTranslacion, distanciaALaTierra, gravedad, clima);
   
       this.distanciaASuPlaneta=distanciaASuPlaneta;
+      this.info=info;
     }
   
   /*
@@ -25,6 +27,7 @@ public class Satelites extends ObjetosCelestes{
         public String informacion(){
           String informacion=("\n**********SATÉLITES SUSCEPTIBLES DE TERRAFORMACIÓN**********\n ");
             informacion+="\nNombre del satélite: "+getNombre();
+            informacion+="\nInformación del satélite: "+this.info;
             informacion+="\nDistancia con su planeta: "+this.distanciaASuPlaneta+" Km";
             informacion+="\nMasa del satélite: "+getMasa()+" toneladas";
             informacion+="\nDiametro del satélite: "+getDiametro()+" Km";
