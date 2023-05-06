@@ -2,8 +2,8 @@ package EjerciciosDelLibro.Tema9.C9_2.Ejer2ArrayPooTema9;
 
 /**
 *  @author: SantiTru
-*  @file: Gatos.java
-*  @info: clase Gatos.
+*  @file: Gatitos.java
+*  @info: clase Gatitos, programa principal PruenaGatitos.java.
 */
 
 public class Gatitos {
@@ -21,18 +21,21 @@ public class Gatitos {
   }
 // método especifico de las sardinas
   public void come(int s) {
+
     System.out.print(this.nombre + ": ");
-    if (sardinas >= s) {
-      for (int i = 0; i < s; i++) {
+    for (int i = 1; i <= s; i++) {
+        if (sardinas == 0) {
+          System.out.println(" ");
+          System.out.println("No quedan más sardinas. Lo siento... ");
+          break;
+        
+        } else {
         System.out.println(" ");
         System.out.print("Ñam...");
         sardinas--;
         sardinasComidas++;
-      }
-      System.out.println();
-    } else {
-      System.out.println(" ");
-      System.out.println("Para ti no hay sardinas. Lo siento... ");
+        System.out.println(); 
+        } 
     }
   }
 //métodos

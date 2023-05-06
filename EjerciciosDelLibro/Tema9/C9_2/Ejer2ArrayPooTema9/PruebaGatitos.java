@@ -2,7 +2,7 @@ package EjerciciosDelLibro.Tema9.C9_2.Ejer2ArrayPooTema9;
 
 /**
 *  @author: SantiTru
-*  @file: PruebaGatos.java
+*  @file: PruebaGatitos.java
 *  @info: Cambia el programa anterior de tal forma que los datos de los gatos se
 *         introduzcan directamente en el código de la forma gatito[2].setColor("marrón") o
 *         bien mediante el constructor, de la forma gatito[3] = new Gato("Garfield", "naranja",
