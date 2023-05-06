@@ -4,14 +4,14 @@ import java.util.Scanner;
 
 public class Gestisimal {
 
-// N determina el tamaño del array
+//N determina el tamaño del array
   static final int N = 100;
 
   static Articulo[] articulos = new Articulo[N];
 
   public static void main(String[] args) {
 
-// Inicializa el array
+//Inicializa el array
     for (int i = 0; i < N; i++) {
       Gestisimal.articulos[i] = new Articulo();
     }
@@ -61,11 +61,11 @@ public class Gestisimal {
             System.out.println("La base de datos está llena.");
           } else {
 
-            // Introducción de datos
+            //Introducción de datos
             System.out.println("Introduzce los datos del artículo.");
             System.out.print("Código: ");
 
-            // Comprueba que el código introducido no se repita
+            //Comprueba que el código introducido no se repita
             do {
               codigoIntroducido = teclado.nextLine();
               if (existeCodigo(codigoIntroducido)) {
@@ -83,7 +83,7 @@ public class Gestisimal {
             System.out.print("Stock: ");
             stockIntroducido = Integer.parseInt(teclado.nextLine());
 
-            // Crea el nuevo artículo
+            //Crea el nuevo artículo
             articulos[primeraPosicionLibre()] = new Articulo(
                 codigoIntroducido, descripcionIntroducida, precioDeCompraIntroducido,
                 precioDeVentaIntroducido, stockIntroducido);
@@ -212,8 +212,7 @@ public class Gestisimal {
   //Funciones necesarias
 
   /**
-   * Busca la primera posición libre del array.
-   * Si no quedan huecos, devuelve -1.
+   * @info: Busca la primera posición libre del array. Si no quedan huecos, devuelve -1.
    * 
    * @return primera posición libre del array o -1 si no quedan huecos
    */
@@ -227,7 +226,7 @@ public class Gestisimal {
   }
 
   /**
-   * Dice si existe o no un artículo con un determinado código.
+   * @info: Dice si existe o no un artículo con un determinado código.
    * 
    * @return true si existe el código y false si no existe
    */
@@ -241,7 +240,7 @@ public class Gestisimal {
   }
 
   /**
-   * Pinta un título con subrayado.
+   * @info: Pinta un título con subrayado.
    */
   public static void pintaTitulo(String titulo) {
     System.out.println("\n" + titulo);
@@ -252,9 +251,8 @@ public class Gestisimal {
   }
 
   /**
-   * Devuelve la posición dentro del array en la que se encuentra un artículo
-   * con un determinado código.
-   * Si el código no se encuentra, devuelve -1.
+   * @info:Devuelve la posición dentro del array en la que se encuentra un artículo
+   *       con un determinado código. Si el código no se encuentra, devuelve -1.
    * 
    * @return posición dentro del array en la que se encuentra un artículo
    */

@@ -120,6 +120,8 @@ public class SpaceZeroDown {
         "En nuestra expedición también vamos a visitar algunos satélites planetarios que son interesantes para la exploración humana o bien para los fines del proyecto");
     System.out.println(" ");
 
+    Scanner teclado = new Scanner(System.in);
+
     do {
       System.out.println("\n \u001B[31mSPACE ZERO DOWN PROJECT \033[0m\n");
 
@@ -147,7 +149,7 @@ public class SpaceZeroDown {
       System.out.println("  20. Exit");
 
       System.out.print("\nDime el número del objeto celeste para más información: ");
-      Scanner teclado = new Scanner(System.in);
+      
       menu = teclado.nextInt();
 
       switch (menu) {
@@ -212,6 +214,7 @@ public class SpaceZeroDown {
       }
 
     } while (menu != 20);
+    teclado.close();
     System.out.println("\u001B[31mPara establecer el programa de viaje, utilice SIRI.\033[0m");
   }
 
