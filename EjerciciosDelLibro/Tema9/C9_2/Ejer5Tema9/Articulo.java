@@ -1,28 +1,36 @@
 package EjerciciosDelLibro.Tema9.C9_2.Ejer5Tema9;
 
+/**
+ * @author: SantiTru
+ * @file: Articulo.java
+ * @info: clase "Articulo" Programa principal Gestisimal.java
+ */
 
 public class Articulo {
+//Definicion de variables de clase Articulo.
   private String codigo;
-  private String descripcion;
+  private String nombreProducto;
+  private String familia;
   private double precioDeCompra;
   private double precioDeVenta;
   private int stock;
-  
+
   public Articulo() {
     this.codigo = "LIBRE";
   }
-
+//Establecemos los valores de las variables de clase Articulo.
   public Articulo(
-    String codigo, String descripcion, double precioDeCompra,
+    String codigo, String nombreProducto, String familia, double precioDeCompra,
     double precioDeVenta, int stock) {
       
     this.codigo = codigo;
-    this.descripcion = descripcion;
+    this.nombreProducto = nombreProducto;
+    this.familia = familia; 
     this.precioDeCompra = precioDeCompra;
     this.precioDeVenta = precioDeVenta;
     this.stock = stock;
   }
-
+//Declaramos los metodos get y set de la clase Articulo.
   public String getCodigo() {
     return codigo;
   }
@@ -31,12 +39,20 @@ public class Articulo {
     this.codigo = codigo;
   }
 
-  public String getDescripcion() {
-    return descripcion;
+  public String getNombreProducto() {
+    return nombreProducto;
   }
 
-  public void setDescripcion(String descripcion) {
-    this.descripcion = descripcion;
+  public void setNombreProducto(String nombreProducto) {
+    this.nombreProducto = nombreProducto;
+  }
+
+  public String getFamilia() {
+    return familia;
+  }
+
+  public void setFamilia(String familia) {
+    this.familia = familia;
   }
 
   public double getPrecioDeCompra() {
@@ -62,11 +78,12 @@ public class Articulo {
   public void setStock(int stock) {
     this.stock = stock;
   }
-
+//Definimos el metodo toString de la clase Articulo.
   public String toString() {
     String cadena = "------------------------------------------\n";
     cadena += "Código: " + this.codigo + "\n";
-    cadena += "Descripción: " + this.descripcion + "\n";
+    cadena += "Nombre del producto: " + this.nombreProducto + "\n";
+    cadena += "Familia del producto: " + this.familia + "\n";
     cadena += "Precio de compra: " + this.precioDeCompra + "\n";
     cadena += "Precio de venta: " + this.precioDeVenta + "\n";
     cadena += "Stock: " + this.stock + " unidades\n";

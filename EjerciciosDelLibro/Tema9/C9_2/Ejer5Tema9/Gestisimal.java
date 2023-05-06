@@ -2,6 +2,12 @@ package EjerciciosDelLibro.Tema9.C9_2.Ejer5Tema9;
 
 import java.util.Scanner;
 
+/**
+ * @author: SantiTru
+ * @file: Gestisimal.java
+ * @info: programa principal del Ejercicio 5 del Tema 9. Libro: Aprende Java con ejercicios.
+ */
+
 public class Gestisimal {
 
 //N determina el tamaño del array
@@ -15,18 +21,18 @@ public class Gestisimal {
     for (int i = 0; i < N; i++) {
       Gestisimal.articulos[i] = new Articulo();
     }
-//Definimos las variables
+//Definimos las variables 
     int opcion;
     int stockIntroducido;
     double precioDeCompraIntroducido;
     double precioDeVentaIntroducido;
-    String codigo;
     String codigoIntroducido = "";
-    String descripcionIntroducida;
+    String nombreIntroducido = "";
+    String familiaIntroducida = "";
 
     Scanner teclado = new Scanner(System.in);
 
-    //Definimos el menú
+//Definimos el menú
     do {
       pintaTitulo("G E S T I S I M A L");
       System.out.println("1. Listado");
@@ -35,13 +41,14 @@ public class Gestisimal {
       System.out.println("4. Modificación");
       System.out.println("5. Entrada de mercancía");
       System.out.println("6. Salida de mercancía");
-      System.out.println("7. Salir");
+      System.out.println("7. Salida de toda la mercancía del stock");
+      System.out.println("8. Salir");
       System.out.print("Introduzca una opción: ");
       opcion = Integer.parseInt(teclado.nextLine());
 
       switch (opcion) {
 
-        //Opción del menú "Listado"
+//Opción del menú "Listado"
         case 1:
           pintaTitulo("LISTADO");
 
@@ -53,7 +60,7 @@ public class Gestisimal {
 
           break;
 
-        //Opción del menú "Alta"
+//Opción del menú "Alta"
         case 2:
           pintaTitulo("NUEVO ARTÍCULO");
 
@@ -61,11 +68,11 @@ public class Gestisimal {
             System.out.println("La base de datos está llena.");
           } else {
 
-            //Introducción de datos
+//Introducción de datos
             System.out.println("Introduzce los datos del artículo.");
             System.out.print("Código: ");
 
-            //Comprueba que el código introducido no se repita
+//Comprueba que el código introducido no se repita
             do {
               codigoIntroducido = teclado.nextLine();
               if (existeCodigo(codigoIntroducido)) {
@@ -74,8 +81,10 @@ public class Gestisimal {
               }
             } while (existeCodigo(codigoIntroducido));
 
-            System.out.print("Descripcion: ");
-            descripcionIntroducida = teclado.nextLine();
+            System.out.print("Nombre del producto: ");
+            nombreIntroducido = teclado.nextLine();
+            System.out.print("Familia del producto: ");
+            familiaIntroducida = teclado.nextLine();
             System.out.print("Precio de compra: ");
             precioDeCompraIntroducido = Double.parseDouble(teclado.nextLine());
             System.out.print("Precio de venta: ");
@@ -83,15 +92,15 @@ public class Gestisimal {
             System.out.print("Stock: ");
             stockIntroducido = Integer.parseInt(teclado.nextLine());
 
-            //Crea el nuevo artículo
+//Crea el nuevo artículo
             articulos[primeraPosicionLibre()] = new Articulo(
-                codigoIntroducido, descripcionIntroducida, precioDeCompraIntroducido,
+                codigoIntroducido, nombreIntroducido, familiaIntroducida, precioDeCompraIntroducido,
                 precioDeVentaIntroducido, stockIntroducido);
           }
 
           break;
 
-        //Opción del menú "Baja"
+//Opción del menú "Baja"
         case 3:
           pintaTitulo("BAJA");
 
@@ -107,7 +116,7 @@ public class Gestisimal {
 
           break;
 
-        //Opción del menú "Modificación"
+//Opción del menú "Modificación"
         case 4:
           pintaTitulo("MODIFICACIÓN");
 
@@ -129,11 +138,18 @@ public class Gestisimal {
               articulos[i].setCodigo(codigoIntroducido);
             }
 
-            System.out.println("Descripción: " + articulos[i].getDescripcion());
-            System.out.print("Nueva descripción: ");
-            descripcionIntroducida = teclado.nextLine();
-            if (!descripcionIntroducida.equals("")) {
-              articulos[i].setDescripcion(descripcionIntroducida);
+            System.out.println("Nombre del producto: " + articulos[i].getNombreProducto());
+            System.out.print("Nuevo nombre: ");
+            nombreIntroducido = teclado.nextLine();
+            if (!nombreIntroducido.equals("")) {
+              articulos[i].setNombreProducto(nombreIntroducido);
+            }
+
+            System.out.println("Familia del producto: " + articulos[i].getFamilia());
+            System.out.print("Nueva familia: ");
+            familiaIntroducida = teclado.nextLine();
+            if (!familiaIntroducida.equals("")) {
+              articulos[i].setFamilia(familiaIntroducida);
             }
 
             System.out.println("Precio de compra: " + articulos[i].getPrecioDeCompra());
@@ -158,7 +174,7 @@ public class Gestisimal {
 
           break;
 
-        //Opción del menú "Entrada de mercancía"
+//Opción del menú "Entrada de mercancía"
         case 5:
           pintaTitulo("ENTRADA DE MERCANCÍA");
 
@@ -180,7 +196,7 @@ public class Gestisimal {
 
           break;
 
-        //Opción del menú "Salida de mercancia"
+//Opción del menú "Salida de mercancia"
         case 6:
           pintaTitulo("SALIDA DE MERCANCÍA");
 
@@ -199,17 +215,23 @@ public class Gestisimal {
               articulos[i].setStock(articulos[i].getStock() - stockIntroducido);
               System.out.println("La mercancía ha salido del almacén.");
             } else {
-              System.out.println("Lo siento, no se pueden sacar tantas unidades.");
+              System.out.println("Lo siento, no hay tanto producto en el almacén.");
             }
           }
 
           break;
+//Opción del mené "Borrar todo el stock"
+          case 7:
+          pintaTitulo("BORRADO DE DATOS");
+          borrarStock();
+          System.out.println("Datos borrados.");
       } //Cerramos el switch
-    } while (opcion != 7);
+    } while (opcion != 8);
+    System.out.println("Gracias por utilizar nuestro programa. ¡Hasta Luego Lucas!");
     teclado.close();
   }
 
-  //Funciones necesarias
+//Funciones necesarias
 
   /**
    * @info: Busca la primera posición libre del array. Si no quedan huecos, devuelve -1.
@@ -245,7 +267,7 @@ public class Gestisimal {
   public static void pintaTitulo(String titulo) {
     System.out.println("\n" + titulo);
     for (int i = 0; i < titulo.length(); i++) {
-      System.out.print("=");
+      System.out.print("\033[0;36m=\033[0m");
     }
     System.out.println();
   }
@@ -264,5 +286,17 @@ public class Gestisimal {
     }
     return -1;
   }
+  /**
+   * @info: Borra todo el contenido del stock del array
+   */
+  public static void borrarStock() {
+    for (Articulo a : articulos) {
+        if (!a.getCodigo().equals("LIBRE")) {
+            a.setStock(0);
+        }
+    }
+    System.out.println("Stock de todos los artículos borrado.");
+}
+
 
 }
