@@ -10,7 +10,7 @@ public class Luna extends ObjetosCelestes{
 
     private double distanciaASuPlaneta;   
 
-    public Luna(String nombre, double distanciaASuPlaneta, double masa, double diametro, double periodoRotacion, double periodoTranslacion, double distanciaALaTierra, double gravedad, String clima){
+    public Luna(String nombre, double distanciaASuPlaneta, String masa, double diametro, double periodoRotacion, double periodoTranslacion, double distanciaALaTierra, double gravedad, String clima){
       super(nombre, masa, diametro, periodoRotacion, periodoTranslacion, distanciaALaTierra, gravedad, clima);
   
       this.distanciaASuPlaneta=distanciaASuPlaneta;
@@ -23,14 +23,14 @@ public class Luna extends ObjetosCelestes{
   
       @Override
         public String informacion(){
-          String informacion=("\n**********SATÉLITE DE REFERENCIA**********");
+          String informacion=("\n**********SATÉLITE DE REFERENCIA**********\n ");
             informacion+="\nNombre del satélite: "+getNombre();
-            informacion+="\nDistancia con la Tierra: "+this.distanciaASuPlaneta+" Km";
+            informacion+="\nDistancia con la Tierra: "+this.distanciaASuPlaneta+" segundos luz";
             informacion+="\nMasa del satélite: "+getMasa()+" toneladas";
             informacion+="\nDiametro del satélite: "+getDiametro()+" Km";
             informacion+="\nPeriodo de Rotación del satélite: "+getPeriodoRotacion()+" días";
             informacion+="\nPeriodo de Translación del satélite: "+getPeriodoTranslacion()+" días";
-            //informacion+="\nDistancia a la Tierra del satélite: "+getDistanciaALaTierra()+" años luz";
+            //informacion+="\nDistancia a la Tierra del satélite: "+getDistanciaALaTierra()+" segundos luz";
             informacion+="\nGravedad del satélite: "+getGravedad()+" m/s^2";
             informacion+="\nClima del satélite: "+getClima();
             return informacion;

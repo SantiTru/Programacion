@@ -57,6 +57,21 @@ Fuerza de la gravedad: 9.81 m/s^2 (a nivel del mar y a latitud 45°)
 Clima medio: varía según la ubicación y la época del año, pero en general, la Tierra tiene una amplia variedad de climas, desde los polos fríos hasta los trópicos cálidos, y todo lo que hay en medio.
 La distancia de la Tierra al Sol es de aproximadamente 0.00001581 años luz.
 
+arrayTierra[0] = new Tierra();
+
+Tierra(
+      String nombre, 
+      double distanciaEstrella, 
+      String masa, 
+      double diametro, 
+      double periodoRotacion, 
+      double periodoTranslacion, 
+      double distanciaALaTierra, 
+      double gravedad, 
+      String clima
+      )
+
+prueba("Prueba", 1.28, "7,34 x 10^22", 3474.00, 27.3, 27.3, 1.28, 162, "Prueba")
 
 Distancias estimadas de los exoplanetas a su respectiva estrella:
 
@@ -170,5 +185,5 @@ La distancia promedio entre la Tierra y la Luna es de aproximadamente 1.28 segun
 La fuerza de la gravedad en la superficie de la Luna es de aproximadamente 1.62 m/s^2.
 En cuanto al clima, la Luna no tiene una atmósfera significativa y no tiene un clima como la Tierra.
 
-Luna(Luna, double distanciaASuPlaneta, double masa, double diametro, double periodoRotacion, double periodoTranslacion, double distanciaALaTierra, double gravedad, String clima)
+Luna("Luna", 1,28, "7,34 x 10^22", 3474,00, 27,3, 27,3, 1,28, 1,62, "la Luna no tiene una atmósfera significativa y no tiene un clima como la Tierra")
 

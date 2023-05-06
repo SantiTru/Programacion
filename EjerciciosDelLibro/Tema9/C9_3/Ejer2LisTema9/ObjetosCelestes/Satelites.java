@@ -10,7 +10,7 @@ public class Satelites extends ObjetosCelestes{
 
     private double distanciaASuPlaneta;   
 
-    public Satelites(String nombre, double distanciaASuPlaneta, double masa, double diametro, double periodoRotacion, double periodoTranslacion, double distanciaALaTierra, double gravedad, String clima){
+    public Satelites(String nombre, double distanciaASuPlaneta, String masa, double diametro, double periodoRotacion, double periodoTranslacion, double distanciaALaTierra, double gravedad, String clima){
       super(nombre, masa, diametro, periodoRotacion, periodoTranslacion, distanciaALaTierra, gravedad, clima);
   
       this.distanciaASuPlaneta=distanciaASuPlaneta;
@@ -23,7 +23,7 @@ public class Satelites extends ObjetosCelestes{
   
       @Override
         public String informacion(){
-          String informacion=("\n**********SATÉLITES SUSCEPTIBLES DE TERRAFORMACIÓN**********");
+          String informacion=("\n**********SATÉLITES SUSCEPTIBLES DE TERRAFORMACIÓN**********\n ");
             informacion+="\nNombre del satélite: "+getNombre();
             informacion+="\nDistancia con su planeta: "+this.distanciaASuPlaneta+" Km";
             informacion+="\nMasa del satélite: "+getMasa()+" toneladas";
