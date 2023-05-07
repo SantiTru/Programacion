@@ -1,4 +1,4 @@
-package EjerciciosDelLibro.Tema9.C9_2.Ejer5Tema9;
+package EjerciciosDelLibro.Tema9.C9_2.Ejer5ArrayPooTema9;
 
 /**
  * @author: SantiTru

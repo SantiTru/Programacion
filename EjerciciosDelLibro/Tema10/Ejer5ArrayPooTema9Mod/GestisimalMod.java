@@ -1,25 +1,25 @@
-package EjerciciosDelLibro.Tema9.C9_2.Ejer5Tema9;
+package EjerciciosDelLibro.Tema10.Ejer5ArrayPooTema9Mod;
 
 import java.util.Scanner;
 
 /**
  * @author: SantiTru
- * @file: Gestisimal.java
+ * @file: GestisimalMod.java
  * @info: programa principal del Ejercicio 5 del Tema 9. Libro: Aprende Java con ejercicios.
  */
 
-public class Gestisimal {
+public class GestisimalMod {
 
 //N determina el tamaño del array
   static final int N = 100;
 
-  static Articulo[] articulos = new Articulo[N];
+  static ArticuloMod[] articulos = new ArticuloMod[N];
 
   public static void main(String[] args) {
 
 //Inicializa el array
     for (int i = 0; i < N; i++) {
-      Gestisimal.articulos[i] = new Articulo();
+      GestisimalMod.articulos[i] = new ArticuloMod();
     }
 //Definimos las variables 
     int opcion;
@@ -52,7 +52,7 @@ public class Gestisimal {
         case 1:
           pintaTitulo("LISTADO");
 
-          for (Articulo a : articulos) {
+          for (ArticuloMod a : articulos) {
             if (!a.getCodigo().equals("LIBRE")) {
               System.out.println(a);
             }
@@ -93,7 +93,7 @@ public class Gestisimal {
             stockIntroducido = Integer.parseInt(teclado.nextLine());
 
 //Crea el nuevo artículo
-            articulos[primeraPosicionLibre()] = new Articulo(
+            articulos[primeraPosicionLibre()] = new ArticuloMod(
                 codigoIntroducido, nombreIntroducido, familiaIntroducida, precioDeCompraIntroducido,
                 precioDeVentaIntroducido, stockIntroducido);
           }
@@ -253,7 +253,7 @@ public class Gestisimal {
    * @return true si existe el código y false si no existe
    */
   public static boolean existeCodigo(String codigo) {
-    for (Articulo a : articulos) {
+    for (ArticuloMod a : articulos) {
       if (a.getCodigo().equals(codigo)) {
         return true;
       }
@@ -290,13 +290,13 @@ public class Gestisimal {
    * @info: Borra todo el contenido del stock del array
    */
   public static void borrarStock() {
-    for (Articulo a : articulos) {
+    for (ArticuloMod a : articulos) {
         if (!a.getCodigo().equals("LIBRE")) {
             a.setStock(0);
         }
     }
     System.out.println("Stock de todos los artículos borrado.");
-}
+  }
 
 
 }
