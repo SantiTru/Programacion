@@ -27,6 +27,7 @@ public class Pizza {
             System.out.println("ya se ha servido");
           }
     }
+//Getters
     public static int getTotalPedidas() {
         return totalPedidas;
     }
