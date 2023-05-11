@@ -1,4 +1,4 @@
-package EjerciciosDelLibro.Tema11.C11;
+package tarea11;
 
 import java.util.ArrayList;
 import java.util.Random;

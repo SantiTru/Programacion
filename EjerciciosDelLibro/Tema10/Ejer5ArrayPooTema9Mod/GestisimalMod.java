@@ -290,9 +290,9 @@ public class GestisimalMod {
    * @info: Borra todo el contenido del stock del array
    */
   public static void borrarStock() {
-    for (ArticuloMod a : articulos) {
-        if (!a.getCodigo().equals("LIBRE")) {
-            a.setStock(0);
+    for (ArticuloMod borra : articulos) {
+        if (!borra.getCodigo().equals("LIBRE")) {
+          borra.setStock(0);
         }
     }
     System.out.println("Stock de todos los artículos borrado.");
