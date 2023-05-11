@@ -1,5 +1,6 @@
 package EjerciciosDelLibro.Tema10.Ejer5ArrayPooTema9Mod;
 
+//import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
@@ -14,6 +15,7 @@ public class GestisimalMod {
   static final int N = 100;
 
   static ArticuloMod[] articulos = new ArticuloMod[N];
+  //ArrayList<ArticuloMod> articulosLista = new ArrayList<ArticuloMod>();
 
   public static void main(String[] args) {
 

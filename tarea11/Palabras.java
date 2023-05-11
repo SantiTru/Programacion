@@ -6,7 +6,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 
-/*
+/**
 * @file: Palabras.java
 * @Info: Programa java "Palabras.java", al que pasándole 2 parámetros por línea de comandos: 
 * el archivo y la palabra, devuelva cuántas veces se encuentra la palabra en el texto, sin distinguir mayúsculas. 
@@ -78,7 +78,7 @@ public class Palabras {
     }
   }
 
-  /*
+  /**
    * @info: funcion que lee el archivo y devuelve un ArrayList con las lineas del
    * archivo.
    * 
@@ -114,7 +114,7 @@ public class Palabras {
     return textoLeido;
   }
 
-  /*
+  /**
    * @info: funcion que obtiene el nombre del archivo que se lee.
    * 
    * @param args: argumentos de la linea de comandos
@@ -139,7 +139,7 @@ public class Palabras {
     return nombreArchivo; // bucle for buscando -f y en la siguiente posición (args [i+1] es el archivo)
   }
 
-  /*
+  /**
    * @info: funcion que cuenta la palabra introducida por linea de comandos en el
    * texto.
    * 
@@ -161,7 +161,7 @@ public class Palabras {
     System.out.println("------------------------------------------------------------------------------");
   }
 
-  /*
+  /**
    * @info: funcion que colorea la palabra buscada en rojo en el texto.
    * 
    * @param args: ArrayList de lineas del texto, palabraBuscada (introducida por
@@ -190,7 +190,7 @@ public class Palabras {
 
   }
 
-  /*
+  /**
    * @info: funcion que cuenta las palabras del texto.
    * 
    * @param args: ArrayList de lineas del texto
@@ -210,7 +210,7 @@ public class Palabras {
     System.out.println("--------------------------------------------");
   }
 
-  /*
+  /**
    * @info: funcion que devuelve la posición de la palabra introducida por linea
    * de comandos en el texto.
    * 
@@ -244,7 +244,7 @@ public class Palabras {
     System.out.println("--------------------------------------------");
   }
 
-  /*
+  /**
    * @info: funcion que devuelve la linea donde se encuentra la palabra
    * introducida por linea de comandos en el texto.
    * 
@@ -276,7 +276,7 @@ public class Palabras {
     System.out.println("--------------------------------------------");
   }
 
-  /*
+  /**
    * @info: funcion que desordena las lineas del texto.
    * 
    * @param args: ArrayList de lineas del texto
@@ -298,12 +298,7 @@ public class Palabras {
     }
   }
 
-  /*
-   * 
-   * 
-   * 
-   * 
-   * 
+  /** 
    * @info: funcion que imprime en minúsculas las lineas del texto.
    * 
    * @param args: ArrayList de lineas del texto
@@ -313,9 +308,11 @@ public class Palabras {
   public static void imprimirMinusculas(ArrayList<String> texto) {
     // Variable para almacenar cada una de las lineas del texto en minúsculas
     String textoMinusculas;
-    // Al igual que en la función anterior tenemos un bucle for que recorre el
-    // ArrayList de lineas del texto y almacena en un String temporal el contenido
-    // de cada linea pasado a minúsculas.
+    /* 
+    Al igual que en la función anterior tenemos un bucle for que recorre el
+    ArrayList de lineas del texto y almacena en un String temporal el contenido
+    de cada linea pasado a minúsculas.
+    */
     for (int i = 0; i < texto.size(); i++) {
       textoMinusculas = texto.get(i).toLowerCase();
       // En cada iteración imprimimos el String temporal en minésculas para que se
@@ -325,7 +322,7 @@ public class Palabras {
     System.out.print("\n");
   }
 
-  /*
+  /**
    * @info: funcion que imprime en mayúsculas las lineas del texto.
    * 
    * @param args: ArrayList de lineas del texto
@@ -347,7 +344,7 @@ public class Palabras {
     System.out.print("\n");
   }
 
-  /*
+  /**
    * @info: funcion que imprime el texto.
    * 
    * @param args: ArrayList de lineas del texto
