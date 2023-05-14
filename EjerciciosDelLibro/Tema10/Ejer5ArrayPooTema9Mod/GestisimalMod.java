@@ -274,9 +274,9 @@ public class GestisimalMod {
 
   /**
    * @info:Devuelve la posición dentro del array en la que se encuentra un
-   *                artículo con un determinado código. Si el código no se
-   *                encuentra,
-   *                devuelve -1. *
+   *       artículo con un determinado código. Si el código no se
+   *       encuentra,
+   *       devuelve -1. *
    * 
    * @return posición dentro del array en la que se encuentra un artículo
    */
