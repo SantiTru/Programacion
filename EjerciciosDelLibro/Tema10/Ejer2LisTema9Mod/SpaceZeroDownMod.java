@@ -1,6 +1,7 @@
 package EjerciciosDelLibro.Tema10.Ejer2LisTema9Mod;
 
 import java.util.Scanner;
+import java.util.ArrayList;
 
 import EjerciciosDelLibro.Tema9.C9_3.Ejer2LisTema9.ObjetosCelestes.Exoplanetas;
 import EjerciciosDelLibro.Tema9.C9_3.Ejer2LisTema9.ObjetosCelestes.Satelites;
@@ -16,86 +17,89 @@ import EjerciciosDelLibro.Tema9.C9_3.Ejer2LisTema9.ObjetosCelestes.Luna;
 public class SpaceZeroDownMod {
   public static void main(String[] args) {
 
-    Exoplanetas[] arrayExoplanetas = new Exoplanetas[10];
+    ArrayList<Exoplanetas> arrayExoplanetas = new ArrayList<>();
 
-    arrayExoplanetas[0] = new Exoplanetas("Kepler-452b",
+    arrayExoplanetas.add(new Exoplanetas("Kepler-452b",
         "Es un exoplaneta rocoso que orbita en la zona habitable de una estrella similar al sol, a unos 1.400 años luz de distancia de la Tierra.",
         1, "5,7", 13.5, 1.03, 384.8, 1.400, 9.2,
-        "Desconocido");
-    arrayExoplanetas[1] = new Exoplanetas("Kepler-186f",
+        "Desconocido"));
+    arrayExoplanetas.add(new Exoplanetas("Kepler-186f",
         "Es un exoplaneta rocoso que orbita en la zona habitable de una estrella enana roja, a unos 500 años luz de distancia.",
         0.037, "7,34 x 10^22", 3474.00, 27.3, 27.3, 1.28, 162,
-        "desconocido, pero se estima que podría tener agua líquida en su superficie si tiene una atmósfera adecuada. Se piensa que podría ser templado");
-    arrayExoplanetas[2] = new Exoplanetas("Kepler-438b",
+        "desconocido, pero se estima que podría tener agua líquida en su superficie si tiene una atmósfera adecuada. Se piensa que podría ser templado"));
+    arrayExoplanetas.add(new Exoplanetas("Kepler-438b",
         "Es un exoplaneta rocoso que orbita en la zona habitable de una estrella enana roja, a unos 640 años luz de distancia.",
         0.166, "7,34 x 10^22", 3474.00, 27.3, 27.3, 1.28, 162,
-        "desconocido, pero se cree que debido a su tamaño y masa, podría ser un planeta rocoso similar a la Tierra, aunque más caliente debido a su cercanía a su estrella.");
-    arrayExoplanetas[3] = new Exoplanetas("Trappist-1e",
+        "desconocido, pero se cree que debido a su tamaño y masa, podría ser un planeta rocoso similar a la Tierra, aunque más caliente debido a su cercanía a su estrella."));
+    arrayExoplanetas.add(new Exoplanetas("Trappist-1e",
         "Es uno de los siete planetas que orbitan la estrella enana roja TRAPPIST-1, y es un candidato potencial para la habitabilidad.",
         0.029, "7,34 x 10^22", 3474.00, 27.3, 27.3, 1.28, 162,
-        "Desconocido");
-    arrayExoplanetas[4] = new Exoplanetas("Proxima Centauri b",
+        "Desconocido"));
+    arrayExoplanetas.add(new Exoplanetas("Proxima Centauri b",
         "Es un exoplaneta rocoso que orbita la estrella más cercana a nuestro sistema solar, Proxima Centauri, a unos 4,2 años luz de distancia.",
         0.05, "7,34 x 10^22", 3474.00, 27.3, 27.3, 1.28, 162,
-        "se desconoce, pero se cree que podría ser templado.");
-    arrayExoplanetas[5] = new Exoplanetas("WASP-121b",
+        "se desconoce, pero se cree que podría ser templado."));
+    arrayExoplanetas.add(new Exoplanetas("WASP-121b",
         "Es un exoplaneta gaseoso caliente que orbita una estrella similar al sol, a unos 880 años luz de distancia.",
         0.025, "7,34 x 10^22", 3474.00, 27.3, 27.3, 1.28, 162,
-        "Caliente y sofocante. se cree que es muy caliente, con temperaturas que alcanzan los 2,500 grados Celsius");
-    arrayExoplanetas[6] = new Exoplanetas("51 Pegasi b",
+        "Caliente y sofocante. se cree que es muy caliente, con temperaturas que alcanzan los 2,500 grados Celsius"));
+    arrayExoplanetas.add(new Exoplanetas("51 Pegasi b",
         "Es un exoplaneta gaseoso caliente que fue el primer planeta extrasolar descubierto orbitando una estrella de secuencia principal.",
         0.052, "7,34 x 10^22", 3474.00, 27.3, 27.3, 1.28, 162,
-        "Desconocido");
-    arrayExoplanetas[7] = new Exoplanetas("Gliese 581d",
+        "Desconocido"));
+    arrayExoplanetas.add(new Exoplanetas("Gliese 581d",
         "Es un exoplaneta rocoso que orbita en la zona habitable de la estrella enana roja Gliese 581, a unos 20 años luz de distancia.",
         0.22, "7,34 x 10^22", 3474.00, 27.3, 27.3, 1.28, 162,
-        "Frío y posiblemente húmedo, aunque se piensa que podría ser templado");
-    arrayExoplanetas[8] = new Exoplanetas("HD 40307g",
+        "Frío y posiblemente húmedo, aunque se piensa que podría ser templado"));
+    arrayExoplanetas.add(new Exoplanetas("HD 40307g",
         "Es un exoplaneta rocoso que orbita en la zona habitable de una estrella similar al sol, a unos 42 años luz de distancia.",
         0.135, "7,34 x 10^22", 3474.00, 27.3, 27.3, 1.28, 162,
-        "Desconocido");
-    arrayExoplanetas[9] = new Exoplanetas("HD 209458 b",
+        "Desconocido"));
+    arrayExoplanetas.add(new Exoplanetas("HD 209458 b",
         "Es un exoplaneta gaseoso caliente que orbita una estrella similar al sol, a unos 150 años luz de distancia.",
         0.047, "7,34 x 10^22", 3474.00, 27.3, 27.3, 1.28, 162,
-        "Caliente y gaseoso. se cree que es muy caliente, con temperaturas que alcanzan los 1,000 grados Celsius");
+        "Caliente y gaseoso. se cree que es muy caliente, con temperaturas que alcanzan los 1,000 grados Celsius"));
 
-    Tierra[] arrayTierra = new Tierra[1];
+    ArrayList<Tierra> arrayTierra = new ArrayList<>();
 
-    arrayTierra[0] = new Tierra("Planeta Tierra", 0.00001581, "5.97 x 10^24", 12.742, 24, 365.25, 0, 9.81,
-        "Varía según la ubicación y la época del año, pero en general, la Tierra tiene una amplia variedad de climas, desde los polos fríos hasta los trópicos cálidos, y todo lo que hay en medio.");
+    arrayTierra.add(new Tierra("Planeta Tierra", 0.00001581, "5.97 x 10^24", 12.742, 24, 365.25, 0, 9.81,
+        "Varía según la ubicación y la época del año, pero en general, la Tierra tiene una amplia variedad de climas, desde los polos fríos hasta los trópicos cálidos, y todo lo que hay en medio."));
 
-    Satelites[] arraySatelites = new Satelites[7];
+    ArrayList<Satelites> arraySatelites = new ArrayList<>();
 
-    arraySatelites[0] = new Satelites("Encélado",
+    arraySatelites.add(new Satelites("Encélado",
         "Es una luna de Saturno que tiene géiseres de agua que son expulsados desde su superficie. Estos géiseres han sido estudiados por la nave espacial Cassini, y se cree que pueden indicar la presencia de un océano subterráneo.",
         1.28, "7,34 x 10^22", 3474.00, 27.3, 27.3, 1.28, 162,
-        "Temperaturas extremadamente frías, alrededor de -198°C.");
-    arraySatelites[1] = new Satelites("Europa",
+        "Temperaturas extremadamente frías, alrededor de -198°C."));
+    arraySatelites.add(new Satelites("Europa",
         "Es una luna de Júpiter que también se cree que tiene un océano subterráneo, y su superficie está cubierta de hielo que ha sido estudiado por la nave espacial Galileo. Se ha considerado que podría haber vida en este océano.",
-        1.28, "7,34 x 10^22", 3474.00, 27.3, 27.3, 1.28, 162, "Superficie helada con ocasionales chorros de agua.");
-    arraySatelites[2] = new Satelites("Titán",
+        1.28, "7,34 x 10^22", 3474.00, 27.3, 27.3, 1.28, 162,
+        "Superficie helada con ocasionales chorros de agua."));
+    arraySatelites.add(new Satelites("Titán",
         "Es una luna de Saturno que tiene una atmósfera densa y compuestos orgánicos en su superficie, lo que lo convierte en un objeto de interés para la investigación de la química prebiótica.",
-        1.28, "7,34 x 10^22", 3474.00, 27.3, 27.3, 1.28, 162, "Superficie helada con lagos y mares de hidrocarburos.");
-    arraySatelites[3] = new Satelites("Io",
+        1.28, "7,34 x 10^22", 3474.00, 27.3, 27.3, 1.28, 162,
+        "Superficie helada con lagos y mares de hidrocarburos."));
+    arraySatelites.add(new Satelites("Io",
         "Es una luna de Júpiter que es extremadamente volcánica, con más de 400 volcanes activos. Estos volcanes han sido estudiados por la nave espacial Galileo, y proporcionan información sobre los procesos geológicos en los cuerpos celestes.",
-        1.28, "7,34 x 10^22", 3474.00, 27.3, 27.3, 1.28, 162, "Superficie rocosa y volcanes activos.");
-    arraySatelites[4] = new Satelites("Ganímedes",
+        1.28, "7,34 x 10^22", 3474.00, 27.3, 27.3, 1.28, 162,
+        "Superficie rocosa y volcanes activos."));
+    arraySatelites.add(new Satelites("Ganímedes",
         "Es la luna más grande de Júpiter y también tiene un océano subterráneo. Ha sido estudiado por la nave espacial Galileo y también se considera un objetivo para la búsqueda de vida en el sistema solar.",
         1.28, "7,34 x 10^22", 3474.00, 27.3, 27.3, 1.28, 162,
-        "Superficie helada con algunas zonas oscuras y brillantes.");
-    arraySatelites[5] = new Satelites("Fobos",
+        "Superficie helada con algunas zonas oscuras y brillantes."));
+    arraySatelites.add(new Satelites("Fobos",
         "Fobos y Deimos: Son dos pequeñas lunas que orbitan alrededor de Marte. Han sido estudiados por varias misiones espaciales, incluyendo la nave espacial Mars Reconnaissance Orbiter, y se cree que pueden ser asteroides capturados por la gravedad de Marte.",
         1.28, "7,34 x 10^22", 3474.00, 27.3, 27.3, 1.28, 162,
-        "No tiene atmósfera, la temperatura oscila entre -130°C y -40°C en la superficie.");
-    arraySatelites[6] = new Satelites("Deimos",
+        "No tiene atmósfera, la temperatura oscila entre -130°C y -40°C en la superficie."));
+    arraySatelites.add(new Satelites("Deimos",
         "Fobos y Deimos: Son dos pequeñas lunas que orbitan alrededor de Marte. Han sido estudiados por varias misiones espaciales, incluyendo la nave espacial Mars Reconnaissance Orbiter, y se cree que pueden ser asteroides capturados por la gravedad de Marte.",
         1.28, "7,34 x 10^22", 3474.00, 27.3, 27.3, 1.28, 162,
-        "No tiene atmósfera, la temperatura oscila entre -143°C y -30°C en la superficie.");
+        "No tiene atmósfera, la temperatura oscila entre -143°C y -30°C en la superficie."));
 
-    Luna[] arrayLuna = new Luna[1];
+    ArrayList<Luna> arrayLuna = new ArrayList<>();
 
-    arrayLuna[0] = new Luna("Luna", 1.28, "7,34 x 10^22", 3474.00, 27.3, 27.3, 1.28, 1.62,
-        "la Luna no tiene una atmósfera significativa y no tiene un clima como la Tierra");
+    arrayLuna.add(new Luna("Luna", 1.28, "7,34 x 10^22", 3474.00, 27.3, 27.3, 1.28, 1.62,
+        "la Luna no tiene una atmósfera significativa y no tiene un clima como la Tierra"));
 
     int menu;
 
@@ -149,67 +153,67 @@ public class SpaceZeroDownMod {
       System.out.println("  20. Exit");
 
       System.out.print("\nDime el número del objeto celeste para más información: ");
-      
+
       menu = teclado.nextInt();
 
       switch (menu) {
 
         case 1:
-          System.out.println(arrayTierra[0].informacion());
+          System.out.println(arrayTierra.get(0).informacion());
           break;
         case 2:
-          System.out.println(arrayExoplanetas[0].informacion());
+          System.out.println(arrayExoplanetas.get(0).informacion());
           break;
         case 3:
-          System.out.println(arrayExoplanetas[1].informacion());
+          System.out.println(arrayExoplanetas.get(1).informacion());
           break;
         case 4:
-          System.out.println(arrayExoplanetas[2].informacion());
+          System.out.println(arrayExoplanetas.get(2).informacion());
           break;
         case 5:
-          System.out.println(arrayExoplanetas[3].informacion());
+          System.out.println(arrayExoplanetas.get(3).informacion());
           break;
         case 6:
-          System.out.println(arrayExoplanetas[4].informacion());
+          System.out.println(arrayExoplanetas.get(4).informacion());
           break;
         case 7:
-          System.out.println(arrayExoplanetas[5].informacion());
+          System.out.println(arrayExoplanetas.get(5).informacion());
           break;
         case 8:
-          System.out.println(arrayExoplanetas[6].informacion());
+          System.out.println(arrayExoplanetas.get(6).informacion());
           break;
         case 9:
-          System.out.println(arrayExoplanetas[7].informacion());
+          System.out.println(arrayExoplanetas.get(7).informacion());
           break;
         case 10:
-          System.out.println(arrayExoplanetas[8].informacion());
+          System.out.println(arrayExoplanetas.get(8).informacion());
           break;
         case 11:
-          System.out.println(arrayExoplanetas[9].informacion());
+          System.out.println(arrayExoplanetas.get(9).informacion());
           break;
         case 12:
-          System.out.println(arrayLuna[0].informacion());
+          System.out.println(arrayLuna.get(0).informacion());
           break;
         case 13:
-          System.out.println(arraySatelites[0].informacion());
+          System.out.println(arraySatelites.get(0).informacion());
           break;
         case 14:
-          System.out.println(arraySatelites[1].informacion());
+          System.out.println(arraySatelites.get(1).informacion());
           break;
         case 15:
-          System.out.println(arraySatelites[2].informacion());
+          System.out.println(arraySatelites.get(2).informacion());
           break;
         case 16:
-          System.out.println(arraySatelites[3].informacion());
+          System.out.println(arraySatelites.get(3).informacion());
           break;
         case 17:
-          System.out.println(arraySatelites[4].informacion());
+          System.out.println(arraySatelites.get(4).informacion());
           break;
         case 18:
-          System.out.println(arraySatelites[5].informacion());
+          System.out.println(arraySatelites.get(5).informacion());
           break;
         case 19:
-          System.out.println(arraySatelites[6].informacion());
+          System.out.println(arraySatelites.get(6).informacion());
           break;
       }
 
