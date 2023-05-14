@@ -11,7 +11,7 @@ import EjerciciosDelLibro.Tema9.C9_3.Ejer2LisTema9.ObjetosCelestes.Luna;
 /**
  * @author: SantiTru
  * @file: SpaceZeroDownMod.java
- * @info: programa principal del Ejercicio 2 del listado facilitado del Tema 9
+ * @info: programa principal del Ejercicio 2 del listado facilitado del Tema 9 modificado con ArrayList
  */
 
 public class SpaceZeroDownMod {
