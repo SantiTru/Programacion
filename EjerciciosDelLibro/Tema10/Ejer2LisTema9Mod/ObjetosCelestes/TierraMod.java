@@ -18,7 +18,7 @@ public class TierraMod extends ObjetosCelestesMod {
     this.distanciaEstrella = distanciaEstrella;
   }
 
-  /*
+  /**
    * @name: informacion
    * 
    * @info: metodo que muestra la informacion de un Exoplaneta
