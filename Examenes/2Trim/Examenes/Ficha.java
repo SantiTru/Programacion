@@ -37,14 +37,6 @@ public class Ficha {
         || (this.lado2 == Ficha.lado2);
   }
 
-  /*
-   * otra posibilidad de toString
-   * @Override
-   * public String toString() {
-   * return "[" + (lado1 == 0 ? " " : lado1) + "||" + (lado2 == 0 ? " " : lado2) +
-   * ']';
-   * }
-   */
   @Override
   public String toString() {
     String l1 = Integer.toString(this.lado1);
@@ -57,5 +49,14 @@ public class Ficha {
     }
     return "[" + l1 + "||" + l2 + ']';
   }
+
+  /*
+   * otra posibilidad de toString()
+   * @Override
+   * public String toString() {
+   * return "[" + (lado1 == 0 ? " " : lado1) + "||" + (lado2 == 0 ? " " : lado2) +
+   * ']';
+   * }
+   */
 
 }
