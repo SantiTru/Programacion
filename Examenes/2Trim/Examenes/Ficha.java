@@ -1,8 +1,9 @@
-/*
+
 public class Ficha {
 
   //atributos
-  private int lado1, lado2;
+  private int lado1;
+  private int lado2;
   private static int NumFichasCreadas;
 
   //constructores
@@ -11,24 +12,24 @@ public class Ficha {
     this.lado2=lado2;
     Ficha.NumFichasCreadas++;
   }
-
-  public Ficha(){
-    this.lado1=(int)(Math.random()*7);
-    this.lado2=(int)(Math.random()*7);
-    Ficha.NumFichasCreadas++;
+  public static int getNumFichasCreadas(){
+    return NumFichasCreadas;
   }
-
+    
   //métodos
-  public String voltea{
-    return new Ficha (lado2, lado1);
+  public Ficha voltea(){
+    return new Ficha(lado2, lado1);
   }
   
-  public boolean encaja(Ficha Ficha2){
-    return (this.lado1==Ficha2.lado1)
-    || (this.lado1==Ficha2.lado2)
-    || (this.lado2==Ficha2.lado1)
-    || (this.lado2==Ficha2.lado2);
+  public boolean encaja(Ficha Ficha){
+    return (this.lado1==Ficha.lado1)
+    || (this.lado1==Ficha.lado2)
+    || (this.lado2==Ficha.lado1)
+    || (this.lado2==Ficha.lado2);
+  }
+  @Override
+  public String toString() {
+    return "[" + (lado1 == 0 ? " " : lado1) + "|" + (lado2 == 0 ? " " : lado2) + ']';
   }
 
 }
-*/
