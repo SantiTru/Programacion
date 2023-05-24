@@ -49,15 +49,21 @@ public class Carta {
   }
 
   public boolean esComodin() {
-    return this.numero == 0;
+    return this.numero == 0&&PURPURA.equals(this.color);
   }
 
   public boolean esJugable() {
-    return (this.numero == Carta.getCartaEnJuego().numero)
-        || (!this.color.equals(Carta.getCartaEnJuego().color))
-        || (this.numero == 0 && Carta.getCartaEnJuego().numero == 0);
+    Carta cartaEnJuego = Carta.getCartaEnJuego();
+    return this.numero == cartaEnJuego.numero || this.color.equals(cartaEnJuego.color) || (this.numero == 0);
   }
 
+  /*
+   * public boolean esJugable() {
+   * return (this.numero == Carta.getCartaEnJuego().numero)
+   * || (!this.color.equals(Carta.getCartaEnJuego().color))
+   * || (this.numero == 0 && Carta.getCartaEnJuego().numero == 0);
+   * }
+   */
   @Override
   public String toString() {
     return numero + " " + color + RESET;
@@ -68,22 +74,22 @@ public class Carta {
     switch (fila) {
       case 1:
         if (numero == 0) {
-          dibujo = ROJO + "/" + PURPURA + " " + VERDE + "\\" + RESET;
+          dibujo = ROJO + "/" + PURPURA + "   " + VERDE + "\\" + RESET;
         } else {
-          dibujo = "/ \\";
+          dibujo = "/   \\";
         }
         break;
       case 2:
 
-        dibujo = " " + numero + " ";
+        dibujo = "  " + numero + "  ";
 
         break;
       case 3:
         if (numero == 0) {
-          dibujo = AZUL + "\\" + PURPURA + " " + AMARILLO + "/" + RESET;
+          dibujo = AZUL + "\\" + PURPURA + "   " + AMARILLO + "/" + RESET;
           ;
         } else {
-          dibujo = "\\ /";
+          dibujo = "\\   /";
         }
         break;
     }

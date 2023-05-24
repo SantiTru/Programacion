@@ -1,5 +1,7 @@
 package Uno_Examen;
 
+import java.util.Random;
+
 /**
  * Clase Uno: Juego de cartas simulado con jugadas aleatorias.
  * Contiene el programa principal (main) ejecutable para el juego Uno.
@@ -111,11 +113,33 @@ public class Uno {
   // /!\ MÉTODOS COMPLETOS, NO TOCAR! /!\
   // =======================================================================================================================================
   public static boolean hayCartasEnMazo() {
-    return " ";
+    for (int i = 0; i < cartas.length; i++) {
+      if (cartas[i] != null) {
+        return true; // Si hay alguna carta no nula, retornamos true
+      }
+    }
+    return false; // Si no hay ninguna carta no nula en el mazo, retornamos false
   }
 
   public static Carta robaDelMazo() {
-    return " ";
+    for (int i = 0; i < cartas.length; i++) {
+      if (cartas[i] != null) {
+        Carta carta = cartas[i];
+        cartas[i] = null; // Remover la carta del mazo
+        return carta; // Retornar la carta encontrada
+      }
+    }
+    return null; // Si no hay cartas en el mazo, retornar null
+  }
+
+  public static void barajarCartas() {
+    Random rand = new Random();
+    for (int i = cartas.length - 1; i > 0; i--) {
+      int j = rand.nextInt(i + 1);
+      Carta temp = cartas[i];
+      cartas[i] = cartas[j];
+      cartas[j] = temp;
+    }
   }
 
   // crearCartas
@@ -155,7 +179,7 @@ public class Uno {
     System.out.print(RESET + "\n ^ \n ");
     for (Carta c : cartas) {
       if (c != null) {
-        System.out.print(c.color() + c.numero() + RESET);
+        System.out.print(c.getColor() + c.getNumero() + RESET);
       }
     }
     System.out.print(" < Cartas en el mazo \n\n\n"); // 2 Saltos de línea
